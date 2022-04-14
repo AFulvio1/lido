@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <title>Lido</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap">
 </head>
 <body>
   <!-- 
@@ -79,12 +82,12 @@
   <!-- questa è la prova con menù senza bootstrap-->
   <div class="header">
     <div class="logo">
-      <img src="logo.png" alt="" height="60" width="100">
+      <img src="/img/logo.png" alt="" height="60" width="100">
     </div>
     <ul class="menu">
       <li><a href="">Home</a></li>
       <li><a href="">About us</a></li>
-      <li><a href="">Servizi</a></li>
+      <li><a href="#servizi">Servizi</a></li>
       <li><a href="">Galleria</a></li>
       <li><a href="">Contatti</a></li>
     </ul>
@@ -101,12 +104,10 @@
       <p class="intro-text">Intro Text</p>
       <h1 class="big-text">Titolo Pagina Web </h1>
       <a href="" class="button">Scopri di più</a>
-      
     </div>
     <video autoplay muted loop id="video">
-      <source src="video.mp4" type="video/mp4">
-    </video> 
-
+      <source src="/video/video.mp4" type="video/mp4">
+    </video>
   </div>
 
   <div class="poster">
@@ -116,72 +117,67 @@
       <a href="" class="button2">Scorpi di più</a>
     </div>
     <div class="poster_img">
-      <img src="poster1.png" alt="">
+      <img src="/img/poster1.png" alt="">
     </div>
   </div>
 
-  <div class="servizi">
+  <div id="servizi" class="servizi">
+
     <h3 class="big-text">I nostri servizi</h3>
-  </div>
 
-  <div class="container">
-    <div class="row big-padding">
-      <div class="col-md-3 col-xs-6">
-        <h3>Spiaggia attrezzata</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
+    <div class="container">
+      <div class="row big-padding">
+        <div class="col-md-3 col-xs-6">
+          <h3>Spiaggia attrezzata</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Docce calde e cabine</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Parco giochi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Ristorante</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
       </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Docce calde e cabine</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Parco giochi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Ristorante</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
+    </div>
+
+    <div class="container">
+      <div class="row big-padding">
+        <div class="col-md-3 col-xs-6">
+          <h3>Campi beach volley</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Tour della città</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Eventi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h3>Parcheggio privato</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+          <a href="" class="button2">Scorpi di più</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="container">
-
-    <div class="row big-padding">
-      <div class="col-md-3 col-xs-6">
-        <h3>Campi beach volley</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Tour della città</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Eventi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <h3>Parcheggio privato</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
-        <a href="" class="button2">Scorpi di più</a>
-      </div>
-    </div>
-  </div>
-  
-
     
   
-
-
-  
-    
+   
   
 
 
@@ -192,7 +188,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <script>
-  $( document ).ready(function() {
+  $(document).ready(function() {
 
     /* Open Panel */
     $( ".hamburger" ).on('click', function() {
