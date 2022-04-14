@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, p{
   padding-bottom: 30px;
 }
 
+p{
+  line-height: 28px;
+  color: #666;
+  font-weight: 300;
+}
+
 .big-text{
   font-size: 70px;
   font-weight: 900;
@@ -36,17 +42,23 @@ h1, h2, h3, h4, h5, p{
 
 .button{
   padding: 18px 28px;
-  background:white; 
+  background:#fff; 
   color:#000;
+  border-radius: 50px;
+}
+
+.button2{
+  padding: 18px 28px;
+  background:#000; 
+  color:#fff;
   display: inline-block;
+  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
-
   .big-text{
     font-size: 40px;
   }
-
 }
 
 /* ! Header */
@@ -87,7 +99,6 @@ h1, h2, h3, h4, h5, p{
 }
 
 @media (max-width: 768px) {
-
 
   .menu{
     position: absolute; 
@@ -131,7 +142,7 @@ h1, h2, h3, h4, h5, p{
 
 .hero{
   position: relative;
-  height: 600px;
+  height: 100vh;
   display: flex; 
   width: 100%;
   align-items: center;
@@ -178,12 +189,63 @@ h1, h2, h3, h4, h5, p{
 }
 
 
-
-
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/* ! poster */
+.poster{
+  display: flex;
+  height: 60vh;
+  width: 70%;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 90%);
+  border:outset ;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.poster_img{
+  width: 50%;
+}
+
+.poster_img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.poster_content{
+  width: 50%;
+  padding: 50px;
+}
+
+@media (max-width:768px) {
+
+  .poster{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .poster_img, 
+  .poster_content{
+    width: 100%;
+  }
+}
+
+/* ! servizi */
+.servizi{
+  padding-top: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  margin: 80px;
 }
