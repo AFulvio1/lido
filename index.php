@@ -15,8 +15,8 @@
       <!-- Stylesheets -->
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap">
-      <link rel="stylesheet" href="./static/css/style.css">
-      <link rel="stylesheet" href="./static/css/coockie.css" async>
+      <link rel="stylesheet" href="/static/css/style.css">
+      <link rel="stylesheet" href="/static/css/coockie.css" async>
   </head>
 
   <body>
@@ -24,8 +24,7 @@
     <!-- NAVBAR -->
     <div id="navbar-container"></div>
     <div class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></div>
-    
-    
+        
     <!-- HERO -->
     <div id="hero-container"></div>
     <div class="load-html" data-container="hero-container" data-source="/partial/hero.html"></div>
@@ -62,13 +61,13 @@
     
 
     <!-- Bootstrap -->
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Coockie -->
-    <script src="./static/js/coockie.js" async></script>
+    <script src="/static/js/coockie.js" async></script>
 
     <!-- Hamburger -->
     <script>

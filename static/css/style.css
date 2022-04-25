@@ -249,3 +249,15 @@ p{
 .container{
   margin: 80px;
 }
+
+
+
+/* TABELLA OMBRELLONI */
+
+#umbrellas td {
+  color: white;
+  background-color: green;
+  border: solid 1px;
+  text-align: center;
+  border-spacing: 2px;
+}
