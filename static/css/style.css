@@ -1,17 +1,41 @@
 /* ! Base Style */
 
-body{
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-}
-
 a{
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, p{
+h1{
+  color:#fff; 
+  font-family: 'Voltaire', sans-serif;
+  font-size: 50px;
+}
+
+h2{
+  color:#000; 
+  padding-bottom: 10px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 16px;
+}
+
+h3{
+  color:#000; 
+  padding-bottom: 5px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 20px;
+}
+
+h4{
+  color:#fff; 
+  padding-bottom: 30px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 40px;
+}
+
+h5{
   color:#000; 
   padding-bottom: 30px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 16px;
 }
 
 p{
@@ -41,18 +65,30 @@ p{
 }
 
 .button{
-  padding: 18px 28px;
-  background:#fff; 
-  color:#000;
-  border-radius: 50px;
-}
-
-.button2{
-  padding: 18px 28px;
-  background:#000; 
+  padding: 15px 28px;
+  background:#57AEE7; 
   color:#fff;
   display: inline-block;
   border-radius: 50px;
+}
+
+.button:hover {
+  color:#fff ;
+  background-color:#000;
+}
+
+.button2{
+  padding: 15px 28px;
+  background:transparent; 
+  color:#fff;
+  display: inline-block;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.button2:hover {
+  color:#000 ;
+  background-color:#fff;
 }
 
 @media (max-width: 768px) {
@@ -88,10 +124,18 @@ p{
 .menu li{
   display: inline-block;
 }
+
 .menu li a{
   color: #fff;
   padding: 20px;
   display: block;
+}
+
+.menu li a:hover {
+  color:#000 ;
+  background-color:#fff;
+  opacity: 0.3;
+  border-radius: 20px;  
 }
 
 .hamburger{
@@ -147,11 +191,10 @@ p{
   width: 100%;
   align-items: center;
   background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0, 0.9)),
-   url('bg-video.png') no-repeat center center;
+   url('bg-video1.png') no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
-
 
 .hero:after{
   content:'';
@@ -164,19 +207,29 @@ p{
   background: #000;
   opacity: 0.4;
 }
+
 .hero__content{
-  width: 100%;
+  width: 50%;
   max-width: 1350px;
   margin: 0 auto;
   padding: 30px;
   z-index: 1;
   position: relative;
-
+  justify-content: center;
 }
 
-.hero__content h1,
+.hero__content h1{
+  color:#fff;
+  text-align: center;
+  font-size: 200px;
+  padding-top: 200px;
+}
+
 .hero__content p{
+  text-align: center;
+  padding-top: -30px;
   color: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 #video{
@@ -188,7 +241,6 @@ p{
   z-index: 0;
 }
 
-
 *,
 *:before,
 *:after {
@@ -198,6 +250,7 @@ p{
 }
 
 /* ! poster */
+
 .poster{
   display: flex;
   height: 60vh;
@@ -214,12 +267,15 @@ p{
 
 .poster_img{
   width: 50%;
+  height: 140%;
+  margin-top: 185px;
+  margin-right: 5px;
 }
 
 .poster_img img{
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 .poster_content{
@@ -240,6 +296,7 @@ p{
 }
 
 /* ! servizi */
+
 .servizi{
   padding-top: 480px;
   display: flex;
@@ -247,9 +304,19 @@ p{
   align-items: center;
 }
 .container{
-  margin: 80px;
+  margin: 0 auto;
+  padding-top:50px ;
+
 }
 
+/* ! Galleria */
+
+.galleria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
 
 
 /* TABELLA OMBRELLONI */
@@ -260,4 +327,13 @@ p{
   border: solid 1px;
   text-align: center;
   border-spacing: 2px;
+}
+
+/* ! Contatti */
+
+.contatti{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -14,13 +14,17 @@
 
       <!-- Stylesheets -->
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
       <link rel="stylesheet" href="/static/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
       <link rel="stylesheet" href="/static/css/coockie.css" async>
   </head>
 
   <body>
-
+    <!-- SCROLLSPY -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-container" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    
     <!-- NAVBAR -->
     <div id="navbar-container"></div>
     <div class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></div>
@@ -34,13 +38,13 @@
     <div class="load-html" data-container="poster-container" data-source="/partial/poster.html"></div>
 
     <!-- SERVIZI -->
-    <div id="servizi" class="servizi">
-      <h3 class="big-text">I nostri servizi</h3>
-    </div>
     <div id="services-container"></div>
     <div class="load-html" data-container="services-container" data-source="/partial/services.html"></div>
 
 
+    <!-- GALLERIA-->
+    <div id="galleria-container"></div>
+    <div class="load-html" data-container="galleria-container" data-source="/partial/galleria.html"></div>
 
 
     <!-- CONTATTI DA FARE -->
@@ -90,6 +94,13 @@
         });
       });
     </script>
+
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-container'
+      })
+    </script>
+      
 
   </body>
 
