@@ -19,71 +19,50 @@
   </head>
 <body>
 
-    <h1>PRENOTA IL TUO OMBRELLONE</h1>
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+    <div class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></div>
+
+    <h2>PRENOTA IL TUO OMBRELLONE</h2>
 
     <?php
         include("response.php");
         $newObj = new Table("localhost","postgres","postgres","lido","5432");
         $table = $newObj->getTable("umbrellas");
     ?>
+   
+    <!-- Inserire commenti -->
+    <?php
+        $n_umbrella = 400;
+        foreach($table as $i => $row) {
+            echo "<div class=\"flexbox\">";
+            foreach($row as $j => $column) {
+                echo "<div class=\"item\">";
+                if ($j == "ID") {
+                    continue;
+                }
+                else {
+                    if ($row[$j] == "t") {
+                        echo "<button type=\"button\" class=\"btn btn-success btn-umbrella\" onclick=\"buttonChoise()\">" . $n_umbrella . "</button>";
+                    }
+                    else {
+                        echo "<button type=\"button\" class=\"btn btn-danger btn-umbrella\" onclick=\"buttonAlert()\">" . $n_umbrella . "</button>";
+                    }
+                    $n_umbrella -= 1;
+                }
+                echo "</div>";
+            }
+            echo "</div>";
+        }      
+    ?>
 
-    <table id="umbrellas" class="table" width="100%" cellspacing="0">
-        <!--
-        <thead>
-            <tr>
-                <th>Fila</th>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
-                <th>E</th>
-                <th>F</th>
-                <th>G</th>
-                <th>H</th>
-                <th>I</th>
-                <th>J</th>
-                <th>K</th>
-                <th>L</th>
-                <th>M</th>
-                <th>N</th>
-                <th>O</th>
-                <th>P</th>
-                <th>Q</th>
-                <th>R</th>
-                <th>S</th>
-                <th>T</th>
-            </tr>
-        </thead>
-        -->
-        <tbody>
-            <?php foreach($table as $key => $t) :?>
-            <tr>
-                <!-- <td><?php echo $t['ID'] ?></td>-->
-                <td><?php echo $t['ID'] . "1" ?></td>
-                <td><?php echo $t['ID'] . "2" ?></td>
-                <td><?php echo $t['ID'] . "3" ?></td>
-                <td><?php echo $t['ID'] . "4" ?></td>
-                <td><?php echo $t['ID'] . "5" ?></td>
-                <td><?php echo $t['F'] . "6" ?></td>
-                <td><?php echo $t['G'] . "7" ?></td>
-                <td><?php echo $t['H'] . "8" ?></td>
-                <td><?php echo $t['I'] . "9" ?></td>
-                <td><?php echo $t['J'] . "1" ?></td>
-                <td><?php echo $t['K'] . "1" ?></td>
-                <td><?php echo $t['L'] . "1" ?></td>
-                <td><?php echo $t['M'] . "1" ?></td>
-                <td><?php echo $t['N'] . "1" ?></td>
-                <td><?php echo $t['O'] . "1" ?></td>
-                <td><?php echo $t['P'] . "1" ?></td>
-                <td><?php echo $t['Q'] . "1" ?></td>
-                <td><?php echo $t['R'] . "1" ?></td>
-                <td><?php echo $t['S'] . "1" ?></td>
-                <td><?php echo $t['T'] . "1" ?></td>
-                <!-- <td><div class="btn-group" data-toggle="buttons"><a href="#" target="_blank" class="btn btn-warning btn-xs" rel="noopener">Edit</a><a href="#" target="_blank" class="btn btn-danger btn-xs" rel="noopener">Delete</a><a href="#" target="_blank" class="btn btn-primary btn-xs" rel="noopener">View</a></div></td> -->
-            </tr>
-            <?php endforeach;?>
-        </tbody>
-    </table>
+
+
+    <!-- FOOTER DA FARE -->
+    <div id="footer-container"></div>
+    <div class="load-html" data-container="footer-container" data-source="/partial/footer.html"></div>
+    
+    
 
 
     <!-- Bootstrap -->
@@ -97,24 +76,35 @@
 
     <!-- Hamburger -->
     <script>
-    $(document).ready(function() {
-        $( ".hamburger" ).on('click', function() {
-        $(".menu").toggleClass("menu--open");
+        $(document).ready(function() {
+            $( ".hamburger" ).on('click', function() {
+            $(".menu").toggleClass("menu--open");
+            });
         });
-    });
     </script>
 
     <!-- Load HTML -->
     <script>
-    $(function () {
-        $(document).ready(function () {
-        $(".load-html").each(function () {
-            var container = '#' + $(this).attr('data-container');
-            var src = $(this).attr('data-source');
-            $(container).load(src);
+        $(function () {
+            $(document).ready(function () {
+                $(".load-html").each(function () {
+                    var container = '#' + $(this).attr('data-container');
+                    var src = $(this).attr('data-source');
+                    $(container).load(src);
+                });
+            });
         });
-        });
-    });
+    </script>
+
+    <!-- Buttons -->
+    <script>
+        function buttonChoise() {
+            /** choise: true if ok, false else */
+            var choise = confirm("Vuoi confermare la scelta?");
+        }
+        function buttonAlert() {
+            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
+        }
     </script>
 </body>
 </html>
