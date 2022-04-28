@@ -331,21 +331,80 @@ p{
 
 /* FOOTER */
 footer {
-  background-color: orange;
-  height: 300px;
-}
-footer > p {
-  color: white;
+  background-color: #57AEE7;
+  align-items: center;
   text-align: center;
-  padding: 9%;
+  height: 300px;
+  width: 100%;
+}
+
+footer > .footer-icon-container {
+  display: grid;
+  grid-template-areas: 'item1 item2 item3 item4';
+}
+
+footer > .footer-icon-container > a > i {
+  color: white;
+  opacity: 1;
+  display: inline-block;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  line-height: 15px;
+  padding: auto;
+}
+
+footer > div > p {
+  color: white;
   text-emphasis: bold;
 }
 
 
 /* TABELLA OMBRELLONI */
 
-.flexbox {
+/*
+.item {
+  grid-area: item;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item'
+    'item item item item item item item item item item item item item item item item item item item item';
+  gap: 5px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+*/
+
+
+.flexbox-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -356,6 +415,7 @@ footer > p {
   margin: 20px;
   box-sizing: border-box;
 }
+
 
 .btn-umbrella {
   width: 40px;
