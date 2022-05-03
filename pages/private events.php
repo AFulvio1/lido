@@ -10,6 +10,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -66,9 +67,6 @@
     <div class="intro">
       <p>Eventi sportivi, eventi moda, feste e tanto divertimento presso il Sunsea. La struttura offre, infatti, una cornice perfetta per ricevimenti, feste, eventi sportivi, sfilate e cerimonie. <br> Il Sunsea è anche tutto questo, ma anche tanto altro ancora, in base alle vostre richieste e alla vostra fantasia.</p>
     </div>
-    <br>
-    <br>
-    <br>
 
 
     <div class="poster2 mt-3">
@@ -76,7 +74,7 @@
         <img src="../static/img/eventifoto.png" alt="">
       </div>
       <div class="poster2__content reveal">
-        <h3 class="big-text">Matrimoni</h3>
+        <h7 class="big-text">Matrimoni</h7>
         <p>Il nostro team di eventi è qualificato per curare un'ampia gamma di allestimenti nuziali progettati per offrire ai nostri ospiti un'esperienza irripetibile. Che si tratti di coriandoli lanciati da elicotteri, percorsi a lume di candela lungo piscine fiancheggiate da palme o il tavolo per gli ospiti con vista sull'oceano, ogni squadra è in contatto con specialisti in ogni campo. Il tuo desiderio è davvero il loro comando! Producendo innumerevoli eventi acclamati negli ultimi 20 anni, i team di eventi del Sunsea, indipendentemente dal luogo, possono organizzare una celebrazione che è perfettamente adatta alle esigenze di ogni individuo e sono sempre a disposizione per supportare ogni passo del cammino.Atti di intrattenimento personalizzati, decorazioni personalizzate, concetti unici.</p>
       </div>
     </div>
@@ -86,7 +84,7 @@
 
     <div class="grid mt-3">
       <div class="col reveal">
-        <h3 class="big-text">Galleria eventi</h3>
+        <h7 class="big-text">Galleria eventi</h7>
       </div>
       <div class="col reveal">
         <p class="mt-2 mt-sma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tenetur sunt unde ut ducimus, fuga quia magni non reiciendis optio. Facilis accusamus vero quo, facere. Soluta molestiae inventore, sit rem!</p>
