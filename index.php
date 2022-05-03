@@ -51,7 +51,7 @@
     <span id="contact-container"></span>
     <span class="load-html" data-container="contact-container" data-source="/partial/contact.html"></span>
 
-    <!-- FOOTER DA FARE -->
+    <!-- FOOTER -->
     <span id="footer-container"></span>
     <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
       
@@ -71,7 +71,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Coockie -->
-    <script src="/static/js/coockie.js" async></script>
+    <script src="/static/js/coockie.js"></script>
 
     <!-- Hamburger -->
     <script>
