@@ -56,6 +56,14 @@ h7{
   padding-bottom: 5px;
   font-family: 'Great Vibes', sans-serif;
   font-size: 20px;
+  opacity: 70%;
+}
+
+h8{
+  color:#57AEE7; 
+  padding-bottom: 5px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 20px;
 }
 
 p{
@@ -425,7 +433,6 @@ footer > div > p {
   min-height: 100%;
   z-index: 0;
 }
-
 
 /* pagina ristorante */
 

@@ -27,7 +27,7 @@
   <span id="hero-container"></span>
   <span class="load-html" data-container="hero-container" data-source="/partial/hero.html"></span>
 
-  <div class="container">
+  
     <nav>
       <div class="header">
         <div class="logo">
@@ -64,6 +64,7 @@
     <br>
     <br>
   
+  <div class="container">
     <div class="intro">
       <p>Eventi sportivi, eventi moda, feste e tanto divertimento presso il Sunsea. La struttura offre, infatti, una cornice perfetta per ricevimenti, feste, eventi sportivi, sfilate e cerimonie. <br> Il Sunsea è anche tutto questo, ma anche tanto altro ancora, in base alle vostre richieste e alla vostra fantasia.</p>
     </div>
@@ -74,7 +75,7 @@
         <img src="../static/img/eventifoto.png" alt="">
       </div>
       <div class="poster2__content reveal">
-        <h7 class="big-text">Matrimoni</h7>
+        <h7 class="big-text">I matrimoni</h7>
         <p>Il nostro team di eventi è qualificato per curare un'ampia gamma di allestimenti nuziali progettati per offrire ai nostri ospiti un'esperienza irripetibile. Che si tratti di coriandoli lanciati da elicotteri, percorsi a lume di candela lungo piscine fiancheggiate da palme o il tavolo per gli ospiti con vista sull'oceano, ogni squadra è in contatto con specialisti in ogni campo. Il tuo desiderio è davvero il loro comando! Producendo innumerevoli eventi acclamati negli ultimi 20 anni, i team di eventi del Sunsea, indipendentemente dal luogo, possono organizzare una celebrazione che è perfettamente adatta alle esigenze di ogni individuo e sono sempre a disposizione per supportare ogni passo del cammino.Atti di intrattenimento personalizzati, decorazioni personalizzate, concetti unici.</p>
       </div>
     </div>
@@ -84,7 +85,7 @@
 
     <div class="grid mt-3">
       <div class="col reveal">
-        <h7 class="big-text">Galleria eventi</h7>
+        <h7 class="big-text">Galleria </h7>
       </div>
       <div class="col reveal">
         <p class="mt-2 mt-sma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tenetur sunt unde ut ducimus, fuga quia magni non reiciendis optio. Facilis accusamus vero quo, facere. Soluta molestiae inventore, sit rem!</p>

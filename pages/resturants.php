@@ -25,7 +25,7 @@
     <span id="hero-container"></span>
     <span class="load-html" data-container="hero-container" data-source="/partial/hero.html"></span>
 
-    <div class="container">
+    
         <nav>
             <div class="header">
                 <div class="logo">
@@ -60,7 +60,7 @@
         <br>
         <br>
         <br>
-  
+    <div class="container">
         <div class="intro">
             <p>Il ristorante del Sunsea gode di un suggestivo affaccio sul Mare. Luminoso e rilassante, domina l'intero resort e regala ai suoi ospiti un riuscito mix di classici della cucina italiana e gustosi menù di pesce, cucinati sempre tenendo conto della stagionalità e della freschezza delle materie prime.</p>
         </div>
@@ -94,7 +94,7 @@
 
         <div class="grid mt-3">
             <div class="col reveal">
-                <h7 class="big-text">Galleria eventi</h7>
+                <h7 class="big-text">Galleria</h7>
             </div>
             <div class="col reveal">
                 <p class="mt-2 mt-sma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tenetur sunt unde ut ducimus, fuga quia magni non reiciendis optio. Facilis accusamus vero quo, facere. Soluta molestiae inventore, sit rem!</p>
