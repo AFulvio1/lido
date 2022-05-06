@@ -7,8 +7,8 @@
     <title>Ristorante</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -57,9 +57,7 @@
                 <img src="../static/img/ristorantesfondo.png" alt="">
             </div>  
         </div>
-        <br>
-        <br>
-        <br>
+    
     <div class="container">
         <div class="intro">
             <p>Il ristorante del Sunsea gode di un suggestivo affaccio sul Mare. Luminoso e rilassante, domina l'intero resort e regala ai suoi ospiti un riuscito mix di classici della cucina italiana e gustosi menù di pesce, cucinati sempre tenendo conto della stagionalità e della freschezza delle materie prime.</p>
@@ -67,14 +65,13 @@
 
         <div class="poster2 mt-3">
             <div class="poster2__content reveal">
-                <h7 class="big-text">Il ristorante</h7>
+                <h7>Il ristorante</h7>
                 <p>Il ristorante di cucina tipica di mare del Sunsea dispone di una sala panoramica e di tavoli all'aperto. Il servizio di ristorazione è aperto tutto l'anno. La sala è a disposizione anche per banchetti, feste di compleanno, cerimonie e cene di lavoro su prenotazione. La cucina proposta dallo chef è attenta alla stagionalità delle materie prime. Il Pesce è una delle Specialità del nostro Ristorante, grazie alla qualità e la freschezza della materia prima e ai nostri menù. Cucinare il Pesce è un’arte e la freschezza del Pesce l’aspetto più importante. Al Ristorante potrai trovare pesce fresco stagionale a secondo della disponibilità.</p>
             </div>
             <div class="poster2__img reveal">
                 <img src="../static/img/ristorantefoto.png" alt="">
             </div>
         </div>
-        <br>
         <br>
         <br>
 
@@ -88,13 +85,13 @@
             <img src="../static/img/ristorantemenù3.png" alt="">
             <img src="../static/img/ristorantemenù4.png" alt="">
         </ul>
-        <p>IL MENÙ PUÒ SUBIRE VARIAZIONI IN BASE ALLA REPERIBILITÀ E ALLA STAGIONALITÀ DEI PRODOTTI<p>
+        <p><u>IL MENÙ PUÒ SUBIRE VARIAZIONI IN BASE ALLA REPERIBILITÀ E ALLA STAGIONALITÀ DEI PRODOTTI</u><p>
         <br>
         <br>
 
         <div class="grid mt-3">
             <div class="col reveal">
-                <h7 class="big-text">Galleria</h7>
+                <h7>Galleria</h7>
             </div>
             <div class="col reveal">
                 <p class="mt-2 mt-sma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tenetur sunt unde ut ducimus, fuga quia magni non reiciendis optio. Facilis accusamus vero quo, facere. Soluta molestiae inventore, sit rem!</p>

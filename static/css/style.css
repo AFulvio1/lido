@@ -18,30 +18,29 @@ h1{
 h2{
   color:#000; 
   padding-bottom: 10px;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Great Vibes', sans-serif;
   font-size: 16px;
-  /* prova */
   text-align: center;
 }
 
 h3{
   color:#000; 
   padding-bottom: 5px;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Imprima', sans-serif;
   font-size: 20px;
 }
 
 h4{
   color:#fff; 
   padding-bottom: 30px;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Imprima', sans-serif;
   font-size: 40px;
 }
 
 h5{
   color:#000; 
   padding-bottom: 30px;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Imprima', sans-serif;
   font-size: 16px;
 }
 
@@ -55,29 +54,34 @@ h7{
   color:#000; 
   padding-bottom: 5px;
   font-family: 'Great Vibes', sans-serif;
-  font-size: 20px;
+  font-size: 100px;
   opacity: 70%;
 }
 
 h8{
   color:#57AEE7; 
   padding-bottom: 5px;
-  font-family: 'Libre Baskerville', sans-serif;
-  font-size: 20px;
+  font-family: 'Imprima', sans-serif;
+  font-size: 30px;
+  opacity: 80%;
 }
+
+
 
 p{
   line-height: 28px;
   color: #666;
   font-weight: 300;
+  font-family: "Imprima" , sans-serif;
+  font-size: 18px;
 }
 
 .big-text{
-  font-size: 70px;
+  font-size: 100px;
   font-weight: 900;
 }
 .med-text{
-  font-size: 40px;
+  font-size: 70px;
 }
 .normal-text{
   font-size: 20px;

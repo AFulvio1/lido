@@ -9,7 +9,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="/static/css/style.css">
@@ -70,10 +70,10 @@
 
     <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-            <img src="../static/img/cittàfoto1.png" alt="">
+            <img src="../static/img/cittàfoto2.png" alt="">
         </div>
         <div class="poster2__content reveal">
-            <h7 class="big-text">La costa</h7>
+            <h7>La costa</h7>
             <p>Posizionato sulla costa nord occidentale dell'isola italiana della Sardegna, è un luogo caldo e accogliente, ricco di tradizioni. Da un affascinante matrimonio sobrio in campagna o una vacanza memorabile a una vacanza a cinque stelle, un viaggio qui soddisferà felicemente anche il viaggiatore più esigente. La Costa Smeralda è il tratto di costa compreso tra la baia di Arzachena e il Golfo di Cugnana ed è forse una delle regioni più conosciute della Sardegna. Il lusso è dietro l'angolo nella vicina località turistica di Porto Cervo, dove puoi fare shopping, cenare fuori e goderti l'ospitalità in stile italiano. Mega yacht e barche a vela affollano la zona, trasportando celebrità, modelli e jet-set.</p>
         </div>
     </div>
@@ -84,14 +84,14 @@
 
     <div class="poster2 mt-3">
         <div class="poster2__content reveal">
-            <h7 class="big-text">Scopri la città...</h7>
+            <h7>Scopri la città...</h7>
             <p>La Costa Smeralda è una destinazione unica dove acque turchesi cristalline, spiagge incontaminate, riserve naturali incontaminate e un'architettura mozzafiato convivono in armonia insieme a hotel di lusso, centri benessere, boutique di design, ristoranti di classe mondiale e eccitante vita notturna. Uno straordinario panorama di case nascoste ricoperte di vegetazione mediterranea, oltre a numerose ville, campi da golf e porti turistici, sembrano vivere in armonia con l'ambiente. Aggiungi la storia unica, la cultura e le antiche tradizioni della regione e c'è un luogo di vacanza affascinante da scoprire. Ma se sei venuto per lo sfarzo e il glamour di un resort sulla spiaggia, sei nel posto giusto. Le numerose barche da pesca oggi sono state sostituite con yacht di lusso e le numerose spiagge e calette sono bellissime.</p>
         </div>
         <div class="poster2__img reveal">
-            <img src="../static/img/cittàfoto2.png" alt="">
+            <img src="../static/img/cittàfoto1.png" alt="">
         </div>
     </div>
-    <h7 class="big-text">Cosa visitare</h7>
+    <h7>Cosa visitare</h7>
     <div class="container">
     <div class="row big-padding">
         <div class="col-md-3 col-xs-6" style="text-align: center;">
@@ -128,7 +128,7 @@
             </div>
             <hr/>    
             <h8>Razza di Giunco</h8>
-            <p>‘Porta d’accesso’ della Costa Smeralda, Cala Razza di Giunco, in realtà, comprende quattro spiagge, in mezzo alle quali si affacciano promontori, isolotti e fiordi, creando uno scenario spettacolare, incastonato tra scogli di granito rosa.</p>
+            <p>'Porta d’accesso' della Costa Smeralda, Cala Razza di Giunco, in realtà, comprende quattro spiagge, in mezzo alle quali si affacciano promontori, isolotti e fiordi, creando uno scenario spettacolare, incastonato tra scogli di granito rosa.</p>
         </div>
         <div class="col-md-3 col-xs-6" style="text-align: center;">
             <div class="img-chiesa">
@@ -151,7 +151,7 @@
 
     <div class="grid mt-3">
       <div class="col reveal">
-        <h7 class="big-text">Galleria</h7>
+        <h7>Galleria</h7>
       </div>
     </div>
     <br>
