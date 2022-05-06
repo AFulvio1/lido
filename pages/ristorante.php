@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style-antonio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/static/css/coockie.css" async>
@@ -20,49 +21,16 @@
     <!-- NAVBAR -->
     <span id="navbar-container"></span>
     <span class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></span>
-    
-    <!-- HERO -->
-    <span id="hero-container"></span>
-    <span class="load-html" data-container="hero-container" data-source="/partial/hero.html"></span>
 
-    
-        <nav>
-            <div class="header">
-                <div class="logo">
-                    <img src="/static/img/logo.png" alt="logo" height="60" width="100">
-                </div>
-  
-                <ul class="menu">
-                    <li><a href="/index.php">Home</a></li>
-                    <li><a href="#about us">About us</a></li>
-                    <li><a href="#servizi">Servizi</a></li>
-                    <li><a href="#galleria">Galleria</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                </ul>
-      
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-
-        <div id="home"  class="hero">
-            <div class="hero__content">
-                <h6 class="big-text">RISTORANTE</h6>
-            </div>
-    
-            <div class="img">
-                <img src="../static/img/ristorantesfondo.png" alt="">
-            </div>  
+    <div id="home"  class="hero">
+        <div class="hero__content">
+            <h6 class="big-text">RISTORANTE</h6>
         </div>
     
     <div class="container">
         <div class="intro">
             <p>Il ristorante del Sunsea gode di un suggestivo affaccio sul Mare. Luminoso e rilassante, domina l'intero resort e regala ai suoi ospiti un riuscito mix di classici della cucina italiana e gustosi menù di pesce, cucinati sempre tenendo conto della stagionalità e della freschezza delle materie prime.</p>
         </div>
-
         <div class="poster2 mt-3">
             <div class="poster2__content reveal">
                 <h7>Il ristorante</h7>
@@ -80,7 +48,8 @@
             <img src="../static/img/ristorantemenù2.png" alt="">
         </ul>
         <br>
-        <br> 
+        <br>
+        
         <ul class="img_menù">
             <img src="../static/img/ristorantemenù3.png" alt="">
             <img src="../static/img/ristorantemenù4.png" alt="">
@@ -147,29 +116,74 @@
         <div class="carousel-cell">
             <img src="../static/img/ristorante15.png" alt="" />
         </div>
-
-        <!--
-        <footer>
-            <div><p>Sunsea srl - P.Iva 123456789</p></div>
-            <div><p>Copyrights Valentini Martina & Fulvio Antonio</p></div>
-            <ul class="footer-icon-container">
-                <span style="color:#fff;">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-pinterest-p"></i>
-                    <i class="fa-brands fa-instagram"></i> 
-                    <i class="fa-brands fa-twitter"></i>
-                </span>
-            </ul>
-        </footer>
-         -->
-    
-
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    
-    
-        <!-- FOOTER -->
-        <span id="footer-container"></span>
-        <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
     </div>
+
+
+    
+    <!-- FOOTER DA FARE -->
+    <span id="footer-container"></span>
+    <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- SCRIPTS
+    <span id="scripts-container"></span>
+    <span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
+
+    <!-- Bootstrap -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Coockie -->
+    <script src="/static/js/coockie.js" async></script>
+
+    <!-- Hamburger -->
+    <script>
+        $(document).ready(function() {
+            $( ".hamburger" ).on('click', function() {
+            $(".menu").toggleClass("menu--open");
+            });
+        });
+    </script>
+
+    <!-- Buttons -->
+    <script>
+        function buttonChoise() {
+            /** choise: true if ok, false else */
+            var choise = confirm("Vuoi confermare la scelta?");
+        }
+        function buttonAlert() {
+            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
+        }
+    </script>
+
+    <!-- Navbar -->
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll',function(){
+            if (window.pageYOffset > 100){
+                nav.classList.add('bg-dark','shadow');
+            }
+            else{
+                nav.classList.remove('bg-dark','shadow');
+            }
+        })
+    </script>
+
+    <!-- Load HTML -->
+    <script>
+        $(function () {
+            $(document).ready(function () {
+                $(".load-html").each(function () {
+                    var container = '#' + $(this).attr('data-container');
+                    var src = $(this).attr('data-source');
+                    $(container).load(src);
+                });
+            });
+        });
+    </script>
 </body>
 </html>

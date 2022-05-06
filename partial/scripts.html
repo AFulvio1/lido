@@ -1,3 +1,13 @@
+<!-- FOOTER DA FARE -->
+<span id="footer-container"></span>
+<span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- SCRIPTS
+<span id="scripts-container"></span>
+<span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
+
 <!-- Bootstrap -->
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 
@@ -39,4 +49,17 @@
             nav.classList.remove('bg-dark','shadow');
         }
     })
+</script>
+
+<!-- Load HTML -->
+<script>
+    $(function () {
+        $(document).ready(function () {
+            $(".load-html").each(function () {
+                var container = '#' + $(this).attr('data-container');
+                var src = $(this).attr('data-source');
+                $(container).load(src);
+            });
+        });
+    });
 </script>
