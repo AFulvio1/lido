@@ -23,42 +23,54 @@
 <body>
 
     <!-- NAVBAR -->
-    <span id="navbar-container"></span>
-    <span class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></span>
+    <div id="navbar-container"></div>
+    <div class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></div>
 
-    <h2>PRENOTA IL TUO OMBRELLONE</h2>
+        <!-- HERO -->
+        <span id="hero-container"></span>
+    <span class="load-html" data-container="hero-container" data-source="/partial/hero-ombrelloni.html"></span>
 
-    <?php
-        include("response.php");
-        $newObj = new Table("localhost","postgres","postgres","lido","5432");
-        $table = $newObj->getTable("umbrellas");
-    ?>
-   
-    <!-- Inserire commenti -->
-    <div class="flexbox-container">
+    <div id="ristorante">
+
+        <h2>PRENOTA IL TUO OMBRELLONE</h2>
+
         <?php
-            $n_umbrella = 400;
-            foreach($table as $i => $row) {
-                //echo "<div class=\"grid-container\">";
-                foreach($row as $j => $column) {
-                    if ($j == "ID") {
-                        continue;
-                    }
-                    else {
-                        echo "<div class=\"item\">";
-                        if ($row[$j] == "t") {
-                            echo "<button type=\"button\" class=\"btn btn-success btn-umbrella\" onclick=\"buttonChoise()\">" . $n_umbrella . "</button>";
+            include("response.php");
+            $newObj = new Table("localhost","postgres","postgres","lido","5432");
+            $table = $newObj->getTable("umbrellas");
+        ?>
+
+        <!-- Inserire commenti -->
+        <div class="flexbox-container tabella-ombrelloni">
+            <?php
+                $n_umbrella = 400;
+                $costo_fila = 15;
+                foreach($table as $i => $row) {
+                    //echo "<div class=\"grid-container\">";
+                    foreach($row as $j => $column) {
+                        if ($j == "ID") {
+                            echo "<div class=\"item\">";
+                            echo $costo_fila . " €";
+                            echo "</div>";
+                            continue;
                         }
                         else {
-                            echo "<button type=\"button\" class=\"btn btn-danger btn-umbrella\" onclick=\"buttonAlert()\">" . $n_umbrella . "</button>";
+                            echo "<div class=\"item\">";
+                            if ($row[$j] == "t") {
+                                echo "<button type=\"button\" class=\"btn btn-primary btn-umbrella\" onclick=\"buttonChoise()\">" . $n_umbrella . "</button>";
+                            }
+                            else {
+                                echo "<button type=\"button\" class=\"btn btn-primary btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
+                            }
+                            $n_umbrella -= 1;
+                            echo "</div>";
                         }
-                        $n_umbrella -= 1;
-                        echo "</div>";
                     }
-                }
-                //echo "</div>";
-            }      
-        ?>
+                    $costo_fila += 1;
+                    //echo "</div>";
+                }      
+            ?>
+        </div>
     </div>
     
     
@@ -98,27 +110,17 @@
         function buttonChoise() {
             /** choise: true if ok, false else */
             var choise = confirm("Vuoi confermare la scelta?");
+            if (choise == ture) {
+
+            }
+            else {
+                
+            }
         }
         function buttonAlert() {
             alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
         }
     </script>
-
-    <!-- Navbar -->
-    <script>
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll',function(){
-            if (window.pageYOffset > 100){
-                nav.classList.add('bg-dark','shadow');
-            }
-            else{
-                nav.classList.remove('bg-dark','shadow');
-            }
-        })
-    </script>
-      
- 
 
     <!-- Load HTML -->
     <script>

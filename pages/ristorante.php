@@ -22,15 +22,16 @@
     <span id="navbar-container"></span>
     <span class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></span>
 
-    <div id="home"  class="hero">
-        <div class="hero__content">
-            <h6 class="big-text">RISTORANTE</h6>
-        </div>
+    <!-- HERO -->
+    <span id="hero-container"></span>
+    <span class="load-html" data-container="hero-container" data-source="/partial/hero-ristorante.html"></span>
     
     <div class="container">
+
         <div class="intro">
             <p>Il ristorante del Sunsea gode di un suggestivo affaccio sul Mare. Luminoso e rilassante, domina l'intero resort e regala ai suoi ospiti un riuscito mix di classici della cucina italiana e gustosi menù di pesce, cucinati sempre tenendo conto della stagionalità e della freschezza delle materie prime.</p>
         </div>
+
         <div class="poster2 mt-3">
             <div class="poster2__content reveal">
                 <h7>Il ristorante</h7>
@@ -49,7 +50,7 @@
         </ul>
         <br>
         <br>
-        
+
         <ul class="img_menù">
             <img src="../static/img/ristorantemenù3.png" alt="">
             <img src="../static/img/ristorantemenù4.png" alt="">
@@ -69,56 +70,55 @@
         <br>
         <br>
 
-        <div class="carousel"
-        data-flickity='{ "wrapAround": true }'>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante1.png" alt="" />
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante1.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante2.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante3.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante4.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante5.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante6.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante7.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante8.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante9.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante10.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante11.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante12.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante13.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante14.png" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="../static/img/ristorante15.png" alt="" />
+            </div>
         </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante2.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante3.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante4.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante5.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante6.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante7.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante8.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante9.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante10.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante11.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante12.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante13.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante14.png" alt="" />
-        </div>
-        <div class="carousel-cell">
-            <img src="../static/img/ristorante15.png" alt="" />
-        </div>
+
     </div>
-
-
     
     <!-- FOOTER DA FARE -->
     <span id="footer-container"></span>
@@ -157,20 +157,6 @@
         function buttonAlert() {
             alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
         }
-    </script>
-
-    <!-- Navbar -->
-    <script>
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll',function(){
-            if (window.pageYOffset > 100){
-                nav.classList.add('bg-dark','shadow');
-            }
-            else{
-                nav.classList.remove('bg-dark','shadow');
-            }
-        })
     </script>
 
     <!-- Load HTML -->
