@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lido</title>
+    <title>Spiaggia attrezzata</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/static/img//favicon.ico" type="image/x-icon">
@@ -46,28 +46,28 @@
                 $n_umbrella = 400;
                 $costo_fila = 15;
                 foreach($table as $i => $row) {
-                    //echo "<div class=\"grid-container\">";
+                    echo "<div class=\"row\">";
                     foreach($row as $j => $column) {
                         if ($j == "ID") {
-                            echo "<div class=\"item\">";
-                            echo $costo_fila . " €";
+                            echo "<div class=\"item-id\">";
+                            echo $costo_fila . "€";
                             echo "</div>";
                             continue;
                         }
                         else {
                             echo "<div class=\"item\">";
                             if ($row[$j] == "t") {
-                                echo "<button type=\"button\" class=\"btn btn-primary btn-umbrella\" onclick=\"buttonChoise()\">" . $n_umbrella . "</button>";
+                                echo "<button type=\"button\" class=\"btn btn-success btn-umbrella\" onclick=\"buttonChoise(n=" . $n_umbrella . ", c=" . $costo_fila . ")\">" . $n_umbrella . "</button>";
                             }
                             else {
-                                echo "<button type=\"button\" class=\"btn btn-primary btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
+                                echo "<button type=\"button\" class=\"btn btn-danger btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
                             }
                             $n_umbrella -= 1;
                             echo "</div>";
                         }
                     }
                     $costo_fila += 1;
-                    //echo "</div>";
+                    echo "</div>";
                 }      
             ?>
         </div>
@@ -107,14 +107,11 @@
 
     <!-- Buttons -->
     <script>
-        function buttonChoise() {
+        function buttonChoise(n,c) {
             /** choise: true if ok, false else */
             var choise = confirm("Vuoi confermare la scelta?");
-            if (choise == ture) {
-
-            }
-            else {
-                
+            if (choise == true) {
+                window.open("http://localhost:3000/servizi/prenotazione-ombrellone.php?n=" + encodeURIComponent(n) + "&c=" + encodeURIComponent(c));
             }
         }
         function buttonAlert() {

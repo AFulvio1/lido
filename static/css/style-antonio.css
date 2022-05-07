@@ -1,10 +1,8 @@
 /* TABELLA OMBRELLONI */
-
 /*
 .item {
   grid-area: item;
 }
-
 .grid-container {
   display: grid;
   grid-template-areas: 
@@ -31,7 +29,6 @@
   gap: 5px;
   padding: 5px;
 }
-
 .grid-container > div {
   text-align: center;
   padding: 20px 0;
@@ -40,27 +37,37 @@
 */
 
 
+/*  CONTENITORE PULSANTI PAGINA OMBRELLONI  */
 .flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    margin: 30px;
 }
-  
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
 .item {
     height: 10px;
     width: 10px;
     margin: 20px;
     box-sizing: border-box;
 }
+.item-id {
+  height: 10px;
+  width: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  color: grey;
+}
   
-  
+
+/*  BOTTONI PAGINA OMBRELLONI  */
 .btn-umbrella {
     width: 40px;
     padding:1px;
 }
-  
 #ombrelloni .free_umbrella {
     color: white;
     background-color: green;
@@ -68,7 +75,6 @@
     text-align: center;
     border-spacing: 2px;
 }
-  
 #ombrelloni .busy_umbrella {
     color: white;
     background-color: red;
@@ -78,15 +84,60 @@
 }
 
 
+/*  EFFETTO BOTTONI SEZIONE SERVIZI HOME  */
 .btn-hover { 
   transition: all .2s ease-in-out; 
 }
-
 .btn-hover:hover {
   transform: scale(1.1); 
 }
 
 
+/* PERSONALIZZAZIONE PAGINA RISTORANTE */
 #ristorante {
   padding: 50px;
+}
+
+
+/*  FRECCIA HERO SECTION  */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation:    fade_move_down 4s ease-in-out infinite;
+  animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }

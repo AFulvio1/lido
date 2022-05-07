@@ -34,7 +34,7 @@
       
   <!-- HERO -->
   <span id="hero-container"></span>
-  <span class="load-html" data-container="hero-container" data-source="/partial/hero.html"></span>
+  <span class="load-html" data-container="hero-container" data-source="/partial/hero-home.html"></span>
 
   <!-- POSTER -->
   <span id="poster-container"></span>
