@@ -143,6 +143,11 @@
       <img src="../static/img/città1.png" alt="" />
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
     
   <!-- FOOTER -->
   <span id="footer-container"></span>

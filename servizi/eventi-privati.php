@@ -41,6 +41,7 @@
       <div class="poster2__content reveal">
         <h7>Matrimoni</h7>
         <p>Il nostro team di eventi è qualificato per curare un'ampia gamma di allestimenti nuziali progettati per offrire ai nostri ospiti un'esperienza irripetibile. Che si tratti di coriandoli lanciati da elicotteri, percorsi a lume di candela lungo piscine fiancheggiate da palme o il tavolo per gli ospiti con vista sull'oceano, ogni squadra è in contatto con specialisti in ogni campo.Il tuo desiderio è davvero il loro comando! Producendo innumerevoli eventi acclamati negli ultimi 20 anni, i team di eventi del Sunsea, indipendentemente dal luogo, possono organizzare una celebrazione che è perfettamente adatta alle esigenze di ogni individuo e sono sempre a disposizione per supportare ogni passo del cammino.Atti di intrattenimento personalizzati, decorazioni personalizzate, concetti unici.</p>
+        <p>Per maggiori informazioni sull'organizzazione di feste private, siete pregati di contattarci!</p>              
       </div>
     </div>
   
@@ -82,6 +83,10 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <!-- FOOTER DA FARE -->
   <span id="footer-container"></span>
