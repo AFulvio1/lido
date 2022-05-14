@@ -27,4 +27,38 @@
         }
     }
 
+
+
+    // Classe gestisce la connessione al database
+    class DB {
+
+        // stringa di connessione al database
+        protected $conn;
+        // variabile che contiene di dati della tabella richiesta
+        protected $data = array();
+
+        // Costruttore che prende in input i dati necessari alla connessione
+        function __construct(string $servername, string $username, string $password, string $dbname, string $port) {
+            // variabile contenente l'oggetto del DB
+            $db = new dbObj($servername, $username, $password, $dbname, $port);
+            // variabile con la stringa di connessione
+            $connString =  $db->getConnString();
+            // salvo la variabile nella classe
+            $this->conn = $connString;
+        }
+        
+        // Funzione che prende in input il nome di una tabella del DB e ne restisce l'array dei record
+        public function getTable(string $table) {
+            // query di selezione
+            $query = "SELECT * FROM public.\"$table\"";
+            // estrazione dei record dal DB
+            $queryRecords = pg_query($this->conn, $query) 
+                or die("error to fetch table data");
+            // salvataggio dei record nell'array
+            $data = pg_fetch_all($queryRecords);
+            // return dell'array dei record
+            return $data;
+        }
+    }
+
 ?>

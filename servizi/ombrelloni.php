@@ -5,62 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Spiaggia attrezzata</title>
+    <title>Ombrelloni</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/static/img//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
     <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/style-antonio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/static/css/coockie.css" async>
 </head>
 <body>
 
     <!-- NAVBAR -->
     <div id="navbar-container"></div>
-    <div class="load-html" data-container="navbar-container" data-source="/partial/navbar.html"></div>
+    <div class="load-html" data-container="navbar-container" data-source="/partial/navbar-bootstrap.html"></div>
 
-        <!-- HERO -->
-        <span id="hero-container"></span>
+    <!-- HERO -->
+    <span id="hero-container"></span>
     <span class="load-html" data-container="hero-container" data-source="/partial/hero-ombrelloni.html"></span>
 
-    <div id="ristorante">
+    <div id="ombrelloni">
 
-        <h2>PRENOTA IL TUO OMBRELLONE</h2>
+        <h1>PRENOTA IL TUO OMBRELLONE</h1>
 
         <?php
-            include("response.php");
-            $newObj = new Table("localhost","postgres","postgres","lido","5432");
+            include("connection.php");
+            // Oggetto che contiene 
+            $newObj = new DB("localhost","postgres","postgres","lido","5432");
             $table = $newObj->getTable("umbrellas");
         ?>
 
         <!-- Inserire commenti -->
-        <div class="flexbox-container tabella-ombrelloni">
+        <div class="flexbox-container">
             <?php
                 $n_umbrella = 400;
                 $costo_fila = 15;
+                //echo "<hr>";
                 foreach($table as $i => $row) {
                     echo "<div class=\"row\">";
                     foreach($row as $j => $column) {
                         if ($j == "ID") {
-                            echo "<div class=\"item-id\">";
+                            echo "<div class=\"item-id\"><strong>";
                             echo $costo_fila . "€";
-                            echo "</div>";
+                            echo "</strong></div>";
                             continue;
                         }
                         else {
                             echo "<div class=\"item\">";
                             if ($row[$j] == "t") {
-                                echo "<button type=\"button\" class=\"btn btn-success btn-umbrella\" onclick=\"buttonChoise(n=" . $n_umbrella . ", c=" . $costo_fila . ")\">" . $n_umbrella . "</button>";
+                                echo "<button type=\"button\" class=\"btn btn-umbrella\" onclick=\"buttonChoise(n=" . $n_umbrella . ", c=" . $costo_fila . ")\"><strong>" . $n_umbrella . "</strong></button>";
                             }
                             else {
-                                echo "<button type=\"button\" class=\"btn btn-danger btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
+                                echo "<button type=\"button\" class=\" btn btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
                             }
                             $n_umbrella -= 1;
                             echo "</div>";
@@ -68,6 +72,7 @@
                     }
                     $costo_fila += 1;
                     echo "</div>";
+                    //echo "<hr>";
                 }      
             ?>
         </div>
@@ -88,7 +93,7 @@
     <span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
 
     <!-- Bootstrap -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -132,6 +137,18 @@
         });
     </script>
 
+    <!-- Navbar -->
+    <script>
+    $(function () {
+        $(window).on('scroll', function () {
+            if ( $(window).scrollTop() > 10 ) {
+                $('.navbar').addClass('active');
+            } else {
+                $('.navbar').removeClass('active');
+            }
+        });
+    });
+    </script>
     
 </body>
 </html>
