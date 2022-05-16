@@ -1,5 +1,8 @@
 # LIDO
 
+## MAIN COLOR
+- #57AEE7
+
 ## CSS
 
 - https://www.proglobalbusinesssolutions.com/css-hover-effects/

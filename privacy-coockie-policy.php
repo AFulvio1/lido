@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Privacy & Cookie Policy</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Baskerville:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style-antonio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/coockie.css" async>
 </head>
 <body>
     <h1>COOCKIE</h1>
     <h2 id="privacy-policy">Privacy policy</h2>
-    <p>Per la PA.VE.SA. la privacy dei propri utenti è di primaria importanza. La presente Informativa sulla privacy definisce quali dati vengono raccolti e il modo in cui gli stessi vengono utilizzati, divulgati, trasferiti e/o archiviati dal Sito. Questo sito raccoglie alcuni dati personali dei propri utenti.</p>
+    <p>Per la Sunsea la privacy dei propri utenti è di primaria importanza. La presente Informativa sulla privacy definisce quali dati vengono raccolti e il modo in cui gli stessi vengono utilizzati, divulgati, trasferiti e/o archiviati dal Sito. Questo sito raccoglie alcuni dati personali dei propri utenti.</p>
     <h3 id="titolare-del-trattamento-dei-dati">Titolare del Trattamento dei dati</h3>
     <p>In caso di domande relative alla presente politica di privacy è possibile contattarci utilizzando le informazioni riportate di seguito.</p>
-    <p>Email: <a href="mailto:info@pavesasrl.it">info@pavesasrl.it</a> P.IVA: 01617240708</p>
+    <p>Email: <a href="mailto:info@pavesasrl.it">info@sunsea.com</a> P.IVA: 123456789</p>
     <h3 id="tipologie-di-dati-raccolti">Tipologie di dati raccolti</h3>
     <p>È possibile visitare il nostro sito in modo anonimo. Fra i dati personali raccolti da pavesasrl.it, in modo autonomo o tramite terze parti, ci sono: Cookie, dati di utilizzo, e varie tipologie di Dati. Dettagli completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa privacy policy o mediante specifici testi informativi visualizzati prima della raccolta dei dati stessi. I Dati Personali possono essere liberamente forniti dall’Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente durante l’uso del sito. Nei casi in cui il sito pavesasrl.it indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ciò abbia alcuna conseguenza sulla disponibilità del Servizio o sulla sua operatività. Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare. L’eventuale utilizzo di Cookie – o di altri strumenti di tracciamento – da parte del sito pavesasrl.it o dei titolari dei servizi terzi utilizzati da pavesasrl.it, ove non diversamente precisato, ha la finalità di fornire il Servizio richiesto dall’Utente, oltre alle ulteriori finalità descritte nel presente documento e nella Cookie Policy, se disponibile. L’Utente si assume la responsabilità dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante pavesasrl.it e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilità verso terzi.</p>
     <hr>
@@ -125,7 +139,73 @@
     <p>La presente informativa privacy è redatta sulla base di molteplici ordinamenti legislativi, inclusi gli artt. 13 e 14 del Regolamento (UE) 2016⁄679.</p>
     <p>Ove non diversamente specificato, questa informativa privacy riguarda esclusivamente pavesasrl.it.</p>
     <p>Ultima modifica: 31 Maggio 2021</p>
-    <hr>
-    <hr>
+
+
+
+    <!-- FOOTER DA FARE -->
+    <span id="footer-container"></span>
+    <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- SCRIPTS
+    <span id="scripts-container"></span>
+    <span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Coockie -->
+    <script src="/static/js/coockie.js" async></script>
+
+    <!-- Hamburger -->
+    <script>
+        $(document).ready(function() {
+            $( ".hamburger" ).on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+        });
+    </script>
+
+    <!-- Buttons -->
+    <script>
+        function buttonChoise() {
+            /** choise: true if ok, false else */
+            var choise = confirm("Vuoi confermare la scelta?");
+        }
+        function buttonAlert() {
+            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
+        }
+    </script>
+
+    <!-- Navbar -->
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll',function(){
+            if (window.pageYOffset > 100){
+                nav.classList.add('bg-dark','shadow');
+            }
+            else{
+                nav.classList.remove('bg-dark','shadow');
+            }
+        })
+    </script>
+
+    <!-- Load HTML -->
+    <script>
+        $(function () {
+            $(document).ready(function () {
+                $(".load-html").each(function () {
+                    var container = '#' + $(this).attr('data-container');
+                    var src = $(this).attr('data-source');
+                    $(container).load(src);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
