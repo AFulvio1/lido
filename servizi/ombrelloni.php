@@ -33,7 +33,8 @@
     <div id="ristorante">
 
         <h2>PRENOTA IL TUO OMBRELLONE</h2>
-
+        
+ 
         <?php
             include("response.php");
             $newObj = new Table("localhost","postgres","postgres","lido","5432");
