@@ -51,9 +51,7 @@
   <span id="contact-container"></span>
   <span class="load-html" data-container="contact-container" data-source="/partial/contact.html"></span>
 
-
-
-
+ 
   <!-- FOOTER -->
   <span id="footer-container"></span>
   <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
@@ -106,6 +104,9 @@
       });
   });
   </script>
+
+  <!-- Contatti -->
+  <script src="/static/js/contatti.js"></script>
     
 </body>
 

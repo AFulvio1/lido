@@ -79,7 +79,7 @@
                 </div>
                 <hr/>
                 <h8>Grande Pevero</h8>
-                <p>A nord-est della Sardegna, nei riflessi turchesi del mare si immerge una luccicante distesa di sabbia fine, fiancheggiata da macchia mediterranea e scogli modellati dal tempo, tipici della Gallura: è una delle spiagge smeraldine più esclusive</p>
+                <p>A nord-est della Sardegna, nei riflessi turchesi del mare si immerge una distesa di sabbia fine, fiancheggiata da macchia mediterranea e scogli modellati dal tempo, tipici della Gallura: è una delle spiagge smeraldine più esclusive</p>
             </div>
             <div class="col-md-3 col-xs-6" style="text-align: center;">
                 <div class="img-chiesa">

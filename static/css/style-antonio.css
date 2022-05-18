@@ -66,6 +66,7 @@
 
 .navbar {
   transition: all 0.4s;
+  font-family: 'Imprima', sans-serif;
 }
 
 .navbar .nav-link {
