@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ombrelloni</title>
+    <title>Trasferimento al modulo di pagamento...</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
@@ -23,72 +23,26 @@
     <link rel="stylesheet" href="/static/css/coockie.css" async>
 </head>
 <body>
-
-    <!-- NAVBAR -->
-    <div id="navbar-container"></div>
-    <div class="load-html" data-container="navbar-container" data-source="/partial/navbar-bootstrap.html"></div>
-
-    <!-- HERO -->
-    <span id="hero-container"></span>
-    <span class="load-html" data-container="hero-container" data-source="/partial/hero-ombrelloni.html"></span>
-
-    <div id="ombrelloni">
-
-        <h1>PRENOTA IL TUO OMBRELLONE</h1>
-        
- 
+    <div id="caricamento">
         <?php
-            include("connection.php");
-            // Oggetto che contiene 
-            $newObj = new DB("localhost","postgres","postgres","lido","5432");
-            $table = $newObj->getTable("umbrellas");
+            include("geturls.php");
+            $url_components = parse_url($url);
+            parse_str($url_components['query'], $params);
+            echo "<h1>TOTALE: ".$params['conto']."</h1>";
         ?>
-
-        <!-- Inserire commenti -->
-        <div class="flexbox-container">
-            <?php
-                $n_umbrella = 400;
-                $costo_fila = 15;
-                //echo "<hr>";
-                foreach($table as $i => $row) {
-                    echo "<div class=\"row\">";
-                    foreach($row as $j => $column) {
-                        if ($j == "ID") {
-                            echo "<div class=\"item-id\"><strong>";
-                            echo $costo_fila . "€";
-                            echo "</strong></div>";
-                            continue;
-                        }
-                        else {
-                            echo "<div class=\"item\">";
-                            if ($row[$j] == "t") {
-                                echo "<button type=\"button\" class=\"btn btn-umbrella\" onclick=\"buttonChoise(n=" . $n_umbrella . ", c=" . $costo_fila . ")\"><strong>" . $n_umbrella . "</strong></button>";
-                            }
-                            else {
-                                echo "<button type=\"button\" class=\" btn btn-umbrella\" onclick=\"buttonAlert()\" disabled>" . $n_umbrella . "</button>";
-                            }
-                            $n_umbrella -= 1;
-                            echo "</div>";
-                        }
-                    }
-                    $costo_fila += 1;
-                    echo "</div>";
-                    //echo "<hr>";
-                }      
-            ?>
+        
+        <div id="loader-container">
+            <div id="loader-one" class="loader"></div>
+            <div id="loader-two" class="loader"></div>
+            <div id="loader-three" class="loader"></div>
         </div>
     </div>
     
-    
 
 
 
-    <!-- FOOTER DA FARE -->
-    <span id="footer-container"></span>
-    <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-
-    
     <!-- SCRIPTS
     <span id="scripts-container"></span>
     <span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
@@ -106,19 +60,16 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $( ".hamburger" ).on('click', function() {
-            $(".menu").toggleClass("menu--open");
+                $(".menu").toggleClass("menu--open");
             });
         });
     </script>
 
     <!-- Buttons -->
     <script type="text/javascript">
-        function buttonChoise(n,c) {
+        function buttonChoise() {
             /** choise: true if ok, false else */
             var choise = confirm("Vuoi confermare la scelta?");
-            if (choise == true) {
-                window.open("http://localhost:3000/servizi/prenotazione-ombrellone.php?n=" + encodeURIComponent(n) + "&c=" + encodeURIComponent(c));
-            }
         }
         function buttonAlert() {
             alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
@@ -150,6 +101,5 @@
         });
     });
     </script>
-    
 </body>
 </html>

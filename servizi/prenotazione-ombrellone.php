@@ -34,58 +34,95 @@
 
     
 
+    <?php
+        include("geturls.php");
+        $url_components = parse_url($url);
+        parse_str($url_components['query'], $params);
+
+        $lettini = '5';
+        $sdraio = '5';
+        $cabina = '5';
+        
+        $counter_lettini = 0;
+        $saldo_lettini = 0;
+        $counter_sdraio = 0;
+        $saldo_sdraio = 0;
+        $counter_cabina = 0;
+        $saldo_cabina = 0;
+
+        
+        if(isset($_POST['aggiungi_lettino'])) {
+            $counter_lettini += 1;
+            $saldo_lettini += 15;
+        }
+        if(isset($_POST['rimuovi_lettino'])) {
+            $counter_lettini -= 1;
+            $saldo_lettini -= 15;
+        }
+
+        function clickInc() {
+            $conto = $params['c'] + ($lettini*$counter_lettini) + ($sdraio*$counter_sdraio) + ($cabina*$counter_cabina);
+        }
+    ?>
+
     <div id="prenotazione">
-
-        <?php
-            include("geturls.php");
-            $url_components = parse_url($url);
-            parse_str($url_components['query'], $params);
-
-            echo "<div class=\"container\">";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-10 offset-lg-2\"><h1>RIEPILOGO PRENOTAZIONE</h1></div>";
-                echo "</div>";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-10 offset-lg-2\">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>";
-                echo "</div>";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-7\">- Ombrellone selezionato: ".$params['n']."</div>";
-                    echo " <div class=\"col-lg-1\">".$params['c']." €</div>";
-                echo "</div>";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-5\">- Seleziona i lettini: </div>";
-                    echo "<div class=\"col-lg-2\">";
-                        echo "<button type=\"button\" class=\"btn-lettini\">+</button>";
-                        echo "<button type=\"button\" class=\"btn-lettini\">-</button>";
-                    echo "</div>";
-                    echo " <div class=\"col-lg-1\">".$params['c']." €</div>";
-                echo "</div>";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-5\">- Seleziona le sdraio: </div>";
-                    echo "<div class=\"col-lg-2\">";
-                        echo "<button type=\"button\" class=\"btn-lettini\">+</button>";
-                        echo "<button type=\"button\" class=\"btn-lettini\">-</button>";
-                    echo "</div>";
-                    echo " <div class=\"col-lg-1\">".$params['c']." €</div>";
-                echo "</div>";
-
-                echo "<div class=\"row justify-content-center\">";
-                    echo "<div class=\"col-lg-5\">- Vuoi inserire anche una cabina?</div>";
-                    echo "<div class=\"col-lg-2\">";
-                        echo "<button type=\"button\" class=\"btn-lettini\">+</button>";
-                        echo "<button type=\"button\" class=\"btn-lettini\">-</button>";
-                    echo "</div>";
-                    echo " <div class=\"col-lg-1\">".$params['c']." €</div>";
-                echo "</div>";
-
-            echo "</div>";
-        ?>
+        <div class="box-prenotazione">
+            <div class="container">
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-10 offset-lg-2"><h1>RIEPILOGO PRENOTAZIONE</h1></div>
+                </div>
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-10 offset-lg-2">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
+                </div>
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-8">- Ombrellone selezionato: <?php echo $params['n']?></div>
+                        <div class="col-lg-1"><?php echo $params['c']?> €</div>
+                </div>
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-5">- Seleziona i lettini: </div>
+                    <div class="col-lg-2">
+                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+                            <input type="submit" class = "btn-lettini" value="+" name="aggiungi_lettino">
+                        </form>
+                        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+                            <input type="submit" class = "btn-lettini" value="-" name="rimuovi_lettino">
+                        </form>
+                    </div>
+                    <div class="col-lg-1"><?php echo $counter_lettini; ?></div>
+                    <div class="col-lg-1"><?php echo $saldo_lettini; ?> €</div>
+                </div>
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-5">- Seleziona le sdraio: </div>
+                    <div class="col-lg-2">
+                        <button type="button" class="btn-lettini">+</button>
+                        <button type="button" class="btn-lettini">-</button>
+                    </div>
+                        <div class="col-lg-1"><?php echo $counter_sdraio ?></div>
+                        <div class="col-lg-1"><?php echo ($sdraio*$counter_sdraio) ?> €</div>
+                </div>
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-5">- Vuoi inserire anche una cabina?</div>
+                    <div class="col-lg-2">
+                        <button type="button" class="btn-lettini">+</button>
+                        <button type="button" class="btn-lettini">-</button>
+                    </div>
+                        <div class="col-lg-1"><?php echo $counter_cabina ?></div>
+                        <div class="col-lg-1"><?php echo ($cabina*$counter_cabina) ?> €</div>
+                </div>
+                
+                <div class="row row-prenotazione justify-content-center">
+                    <div class="col-lg-8">- Conto: </div>
+                        <div class="col-lg-1"><?php echo $conto ?> €</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 offset-lg-8">
+                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $conto ?>)">Procedi al modulo di pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
 
     <!-- FOOTER DA FARE -->
@@ -108,7 +145,7 @@
     <script src="/static/js/coockie.js" async></script>
 
     <!-- Hamburger -->
-    <script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $( ".hamburger" ).on('click', function() {
                 $(".menu").toggleClass("menu--open");
@@ -117,18 +154,14 @@
     </script>
 
     <!-- Buttons -->
-    <script>
-        function buttonChoise() {
-            /** choise: true if ok, false else */
-            var choise = confirm("Vuoi confermare la scelta?");
-        }
-        function buttonAlert() {
-            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
-        }
+    <script type="text/javascript">
+        function bottonePagamento(conto) {
+            window.open("http://localhost:3000/servizi/caricamento.php?conto=" + encodeURIComponent(conto));
+        };
     </script>
 
     <!-- Load HTML -->
-    <script>
+    <script type="text/javascript">
         $(function () {
             $(document).ready(function () {
                 $(".load-html").each(function () {
@@ -141,7 +174,7 @@
     </script>
 
     <!-- Navbar -->
-    <script>
+    <script type="text/javascript">
     $(function () {
         $(window).on('scroll', function () {
             if ( $(window).scrollTop() > 10 ) {

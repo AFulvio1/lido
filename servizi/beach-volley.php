@@ -150,7 +150,7 @@
   <script src="/static/js/coockie.js" async></script>
 
   <!-- Hamburger -->
-  <script>
+  <script type="text/javascript">
       $(document).ready(function() {
           $( ".hamburger" ).on('click', function() {
               $(".menu").toggleClass("menu--open");
@@ -159,7 +159,7 @@
   </script>
 
   <!-- Buttons -->
-  <script>
+  <script type="text/javascript">
       function buttonChoise() {
           /** choise: true if ok, false else */
           var choise = confirm("Vuoi confermare la scelta?");
@@ -170,7 +170,7 @@
   </script>
 
   <!-- Load HTML -->
-  <script>
+  <script type="text/javascript">
       $(function () {
           $(document).ready(function () {
               $(".load-html").each(function () {
@@ -183,7 +183,7 @@
   </script>
 
   <!-- Navbar -->
-  <script>
+  <script type="text/javascript">
   $(function () {
       $(window).on('scroll', function () {
           if ( $(window).scrollTop() > 10 ) {
