@@ -25,7 +25,7 @@
 <body>
     <div id="caricamento">
         <?php
-            include("geturls.php");
+            include("../utility/geturls.php");
             $url_components = parse_url($url);
             parse_str($url_components['query'], $params);
             echo "<h1>TOTALE: ".$params['conto']."</h1>";

@@ -38,7 +38,7 @@
         
  
         <?php
-            include("connection.php");
+            include("../utility/connection.php");
             // Oggetto che contiene 
             $newObj = new DB("localhost","postgres","postgres","lido","5432");
             $table = $newObj->getTable("umbrellas");
