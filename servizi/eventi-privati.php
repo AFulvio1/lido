@@ -1,3 +1,11 @@
+<?php
+  if (isset($_SESSION['previous'])) {
+    if (basename($_SERVER['PHP_SELF']) != $_SESSION['previous']) {
+      session_destroy();
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,11 +30,11 @@
 <body>
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
-  <span class="load-html" data-container="navbar-container" data-source="/partial/navbar-bootstrap.html"></span>
+  <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
 
   <!-- HERO -->
   <span id="hero-container"></span>
-  <span class="load-html" data-container="hero-container" data-source="/partial/hero-eventi.html"></span>
+  <span class="load-html" data-container="hero-container" data-source="/partials/hero-eventi.html"></span>
 
   <div id="eventi">
     <div class="container">
@@ -95,13 +103,13 @@
 
   <!-- FOOTER DA FARE -->
   <span id="footer-container"></span>
-  <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+  <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <!-- SCRIPTS
   <span id="scripts-container"></span>
-  <span class="load-html" data-container="scripts-container" data-source="/partial/scripts.html"></span> -->
+  <span class="load-html" data-container="scripts-container" data-source="/partials/scripts.html"></span> -->
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

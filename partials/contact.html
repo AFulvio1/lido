@@ -1,0 +1,54 @@
+<div id="contatti" class="contatti">
+    <h2 class="med-text">Contatti</h2>
+</div>
+
+<div class="container">
+    <div class="col-md-6"> 
+        <div class="icone-contatti">
+            <span style="color: #57AEE7;">
+                <p><i class="fa-solid fa-location-dot fa-2x"></i>&emsp;Via del mare, 55 Costa Smeralda</p>
+                <p><i class="fa-solid fa-envelope fa-2x"></i>&emsp;info@sunsea.it</p>
+                <p><i class="fa-solid fa-phone-flip fa-2x"></i>&emsp;3456789123</p>             
+            </span>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <form name="formmail" method="post" action="" onsubmit="return controlloForm()">
+              
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" id="nome" name="nome" placeholder="Inserisci Nome e Cognome" size="30" maxlength="30" pattern=[A-Z\sa-z]{3,20} required>
+            
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Inserisci indirizzo di posta elettronica" size="30" maxlength="30" required>
+            
+            <label for="tel">Telefono</label>
+            <input type="text" id="tel" name="tel" placeholder="Inserisci numero di telefono" size="16" maxlength="16" required>
+            
+            <label for="cosa">Per cosa ci contatti</label>
+            <select id="cosa" name="cosa" required>
+                <option></option>
+                <option value="Prenotazione ombrelloni">Prenotazione ombrelloni</option>
+                <option value="Prenotazione eventi">Prenotazione eventi</option>
+                <option value="Prenotazione beach-volley">Prenotazione beach-volley</option>
+                <option value="Altro">Altro</option>
+            </select>
+            
+            <label for="msg">Messaggio</label>
+            <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio" required></textarea>
+                 
+            <input type="checkbox" name="privacy" id="privacy" checked required>
+            <label style="font-size: 12px;" for="privacy">Ho letto la vostra <a title="Privacy e policy" href="/../servizi/privacy-coockie-policy.php" target="_blank">Informativa privacy</a> e acconsento Al trattamento dei miei dati personali per l’erogazione del servizio richiesto.</label>
+            <br>
+      
+            <input type="submit" value="Invia Richiesta">
+      
+        </form>
+    </div>
+</div>
+<br>
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.137071822575!2d9.533556315255527!3d41.13153357928846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d940c93ede5b35%3A0xfccbf6c590058e20!2sCosta%20Smeralda%20Holidays!5e0!3m2!1sit!2sit!4v1652536173566!5m2!1sit!2sit" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    

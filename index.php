@@ -27,34 +27,34 @@
   
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
-  <span class="load-html" data-container="navbar-container" data-source="/partial/navbar-bootstrap.html"></span>
+  <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
       
   <!-- HERO -->
   <span id="hero-container"></span>
-  <span class="load-html" data-container="hero-container" data-source="/partial/hero-home.html"></span>
+  <span class="load-html" data-container="hero-container" data-source="/partials/hero-home.html"></span>
 
   <!-- POSTER -->
   <span id="poster-container"></span>
-  <span class="load-html" data-container="poster-container" data-source="/partial/poster.html"></span>
+  <span class="load-html" data-container="poster-container" data-source="/partials/poster.html"></span>
 
   <!-- SERVIZI -->
   <span id="servizi-container"></span>
-  <span class="load-html" data-container="servizi-container" data-source="/partial/servizi.html"></span>
+  <span class="load-html" data-container="servizi-container" data-source="/partials/servizi.html"></span>
 
 
   <!-- GALLERIA-->
   <span id="galleria-container"></span>
-  <span class="load-html" data-container="galleria-container" data-source="/partial/galleria.html"></span>
+  <span class="load-html" data-container="galleria-container" data-source="/partials/galleria.html"></span>
 
 
   <!-- CONTATTI -->
   <span id="contact-container"></span>
-  <span class="load-html" data-container="contact-container" data-source="/partial/contact.html"></span>
+  <span class="load-html" data-container="contact-container" data-source="/partials/contact.html"></span>
 
  
   <!-- FOOTER -->
   <span id="footer-container"></span>
-  <span class="load-html" data-container="footer-container" data-source="/partial/footer.html"></span>
+  <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 
 
 
