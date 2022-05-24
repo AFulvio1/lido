@@ -45,7 +45,7 @@
 
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="../static/img/eventifoto.png" alt="">
+          <img src="/static/img/eventifoto.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>Matrimoni</h7>
@@ -64,31 +64,31 @@
 
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
-          <img src="../static/img/eventi2.png" alt="" />
+          <img src="/static/img/eventi2.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi3.png" alt="" />
+          <img src="/static/img/eventi3.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi4.png" alt="" />
+          <img src="/static/img/eventi4.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi5.png" alt="" />
+          <img src="/static/img/eventi5.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi6.png" alt="" />
+          <img src="/static/img/eventi6.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi7.png" alt="" />
+          <img src="/static/img/eventi7.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi8.png" alt="" />
+          <img src="/static/img/eventi8.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi9.png" alt="" />
+          <img src="/static/img/eventi9.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/eventi1.png" alt="" />
+          <img src="/static/img/eventi1.png" alt="" />
         </div>
       </div>
     </div>

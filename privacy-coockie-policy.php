@@ -8,8 +8,8 @@
     <title>Privacy & Cookie Policy</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">

@@ -7,8 +7,10 @@
 
     $_SESSION['previous'] = basename($_SERVER['PHP_SELF']);
 
-    $_SESSION['id'] = $params['n'];
-    $_SESSION['conto'] = $params['c'];
+    $_SESSION['id'] = $params['numero'];
+    $_SESSION['conto'] = $params['conto'];
+    $_SESSION['riga'] = $params['riga'];
+    $_SESSION['colonna'] = $params['colonna'];
     $_SESSION['counter_lettini'] = 0;
     $_SESSION['saldo_lettini'] = 0;
     $_SESSION['counter_sdraio'] = 0;
@@ -27,8 +29,8 @@
     <title>Prenota il tuo ombrellone</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -138,7 +140,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-lg-4 offset-lg-8">
-                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>)">Procedi al modulo di pagamento</button>
+                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>, riga=<?php echo $_SESSION['riga']; ?>, colonna=<?php echo $_SESSION['colonna']; ?>)">Procedi al modulo di pagamento</button>
                     </div>
                 </div>
             </div>

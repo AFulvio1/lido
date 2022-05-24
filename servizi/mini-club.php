@@ -45,7 +45,7 @@
 
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="../static/img/miniclubfoto1.png" alt="">
+          <img src="/static/img/miniclubfoto1.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>Il mini club</h7>
@@ -60,14 +60,14 @@
       </div>
       
       <div class="img_miniclub">
-        <img src="../static/img/miniclubfoto2.png" alt="">
+        <img src="/static/img/miniclubfoto2.png" alt="">
       </div>
 
         
 
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="../static/img/miniclubfoto3.png" alt="">
+          <img src="/static/img/miniclubfoto3.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>L 'animazione</h7>
@@ -87,34 +87,34 @@
 
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub2.png" alt="" />
+          <img src="/static/img/miniclub2.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub3.png" alt="" />
+          <img src="/static/img/miniclub3.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub4.png" alt="" />
+          <img src="/static/img/miniclub4.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub5.png" alt="" />
+          <img src="/static/img/miniclub5.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub6.png" alt="" />
+          <img src="/static/img/miniclub6.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub7.png" alt="" />
+          <img src="/static/img/miniclub7.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub8.png" alt="" />
+          <img src="/static/img/miniclub8.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub9.png" alt="" />
+          <img src="/static/img/miniclub9.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub10.png" alt="" />
+          <img src="/static/img/miniclub10.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/miniclub1.png" alt="" />
+          <img src="/static/img/miniclub1.png" alt="" />
         </div>
       </div>
     </div>

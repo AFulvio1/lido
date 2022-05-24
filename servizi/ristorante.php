@@ -49,22 +49,22 @@
                     <p>Il ristorante di cucina tipica di mare del Sunsea dispone di una sala panoramica e di tavoli all'aperto. Il servizio di ristorazione è aperto tutto l'anno. La sala è a disposizione anche per banchetti, feste di compleanno, cerimonie e cene di lavoro su prenotazione. La cucina proposta dallo chef è attenta alla stagionalità delle materie prime. Il Pesce è una delle Specialità del nostro Ristorante, grazie alla qualità e la freschezza della materia prima e ai nostri menù. Cucinare il Pesce è un’arte e la freschezza del Pesce l’aspetto più importante. Al Ristorante potrai trovare pesce fresco stagionale a secondo della disponibilità.</p>
                 </div>
                 <div class="poster2__img reveal">
-                    <img src="../static/img/ristorantefoto.png" alt="">
+                    <img src="/static/img/ristorantefoto.png" alt="">
                 </div>
             </div>
             <br>
             <br>
 
             <ul class="img_menù">
-                <img src="../static/img/ristorantemenù1.png" alt="">
-                <img src="../static/img/ristorantemenù2.png" alt="">
+                <img src="/static/img/ristorantemenù1.png" alt="">
+                <img src="/static/img/ristorantemenù2.png" alt="">
             </ul>
             <br>
             <br>
 
             <ul class="img_menù">
-                <img src="../static/img/ristorantemenù3.png" alt="">
-                <img src="../static/img/ristorantemenù4.png" alt="">
+                <img src="/static/img/ristorantemenù3.png" alt="">
+                <img src="/static/img/ristorantemenù4.png" alt="">
             </ul>
             <p><u>IL MENÙ PUÒ SUBIRE VARIAZIONI IN BASE ALLA REPERIBILITÀ E ALLA STAGIONALITÀ DEI PRODOTTI</u><p>
             <br>
@@ -83,49 +83,49 @@
 
             <div class="carousel" data-flickity='{ "wrapAround": true }'>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante1.png" alt="" />
+                    <img src="/static/img/ristorante1.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante2.png" alt="" />
+                    <img src="/static/img/ristorante2.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante3.png" alt="" />
+                    <img src="/static/img/ristorante3.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante4.png" alt="" />
+                    <img src="/static/img/ristorante4.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante5.png" alt="" />
+                    <img src="/static/img/ristorante5.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante6.png" alt="" />
+                    <img src="/static/img/ristorante6.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante7.png" alt="" />
+                    <img src="/static/img/ristorante7.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante8.png" alt="" />
+                    <img src="/static/img/ristorante8.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante9.png" alt="" />
+                    <img src="/static/img/ristorante9.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante10.png" alt="" />
+                    <img src="/static/img/ristorante10.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante11.png" alt="" />
+                    <img src="/static/img/ristorante11.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante12.png" alt="" />
+                    <img src="/static/img/ristorante12.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante13.png" alt="" />
+                    <img src="/static/img/ristorante13.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante14.png" alt="" />
+                    <img src="/static/img/ristorante14.png" alt="" />
                 </div>
                 <div class="carousel-cell">
-                    <img src="../static/img/ristorante15.png" alt="" />
+                    <img src="/static/img/ristorante15.png" alt="" />
                 </div>
             </div>
 

@@ -2,7 +2,9 @@
     // Program to display URL of current page.
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
         $url = "https";
-    else $url = "http";
+    else {
+        $url = "http";
+    }
       
     // Here append the common URL characters.
     $url .= "://";

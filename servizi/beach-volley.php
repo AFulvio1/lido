@@ -16,8 +16,8 @@
   <title>Beach-Volley</title>
   
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -45,7 +45,7 @@
     <div class="container">
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="../static/img/b-vfoto1.png" alt="">
+          <img src="/static/img/b-vfoto1.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>Lo sport</h7>
@@ -71,7 +71,7 @@
 
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="../static/img/b-vfoto2.png" alt="">
+          <img src="/static/img/b-vfoto2.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>I tornei</h7>
@@ -99,34 +99,34 @@
 
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
-          <img src="../static/img/b-v2.png" alt="" />
+          <img src="/static/img/b-v2.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v3.png" alt="" />
+          <img src="/static/img/b-v3.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v4.png" alt="" />
+          <img src="/static/img/b-v4.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v5.png" alt="" />
+          <img src="/static/img/b-v5.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v6.png" alt="" />
+          <img src="/static/img/b-v6.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v7.png" alt="" />
+          <img src="/static/img/b-v7.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v8.png" alt="" />
+          <img src="/static/img/b-v8.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v9.png" alt="" />
+          <img src="/static/img/b-v9.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v10.png" alt="" />
+          <img src="/static/img/b-v10.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="../static/img/b-v1.png" alt="" />
+          <img src="/static/img/b-v1.png" alt="" />
         </div>
       </div>
     </div>

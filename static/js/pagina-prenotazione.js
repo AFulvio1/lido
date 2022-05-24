@@ -1,56 +1,5 @@
-function bottonePagamento(conto, id) {
-    window.open("http://localhost:3000/servizi/ombrelloni/caricamento.php?conto=" + encodeURIComponent(conto));
-
-    var column;
-    var row;
-
-    const t = Array()
-
-    const stringa_id = id.toString();
-    const string_lenght = stringa_id.length;
-
-    let n_column = stringa_id.charAt(stringa_id.length-1);
-
-    if (string_lenght == 1) {
-
-    }
-    else if (string_lenght == 2) {
-
-    }
-    else if (string_lenght == 3) {
-
-    }
-
-    if ( n_column == '1') {
-        let column = 'T';
-    }
-    else if (n_column == '2') {
-        let column = 'S';
-    }
-    else if (n_column == '3') {
-        let column = 'T';
-    }
-    else if (n_column == '4') {
-        let column = 'T';
-    }
-    else if (n_column == '5') {
-        let column = 'T';
-    }
-    else if (n_column == '6') {
-        let column = 'E';
-    }
-    else if (n_column == '7') {
-        let column = 'D';
-    }
-    else if (n_column == '8') {
-        let column = 'C';
-    }
-    else if (n_column == '9') {
-        let column = 'B';
-    }
-    else if (n_column == '0') {
-        let column = 'A';
-    }
+function bottonePagamento(conto, id, riga, colonna) {
+    window.open("http://localhost:3000/servizi/ombrelloni/caricamento.php?conto=" + encodeURIComponent(conto) + "&id=" + encodeURIComponent(id) + "&riga=" + encodeURIComponent(riga) + "&colonna=" + encodeURIComponent(colonna));
 }
     
 $(document).ready( function() {

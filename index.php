@@ -8,8 +8,8 @@
   <title>Lido</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./static/img//favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./static/img//favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">

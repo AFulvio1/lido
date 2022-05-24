@@ -36,6 +36,8 @@
         protected $conn;
         // variabile che contiene di dati della tabella richiesta
         protected $data = array();
+        //variabile che contiene il nome della tabella
+        protected $table;
 
         // Costruttore che prende in input i dati necessari alla connessione
         function __construct(string $servername, string $username, string $password, string $dbname, string $port) {
@@ -49,6 +51,7 @@
         
         // Funzione che prende in input il nome di una tabella del DB e ne restisce l'array dei record
         public function getTable(string $table) {
+            $this->$table = $table;
             // query di selezione
             $query = "SELECT * FROM public.\"$table\"";
             // estrazione dei record dal DB
@@ -60,16 +63,12 @@
             return $data;
         }
 
-        public function setValue(string $table) {
-            // query di selezione
-            $query = "SELECT * FROM public.\"$table\"";
-            // estrazione dei record dal DB
-            $queryRecords = pg_query($this->conn, $query) 
-                or die("error to fetch table data");
-            // salvataggio dei record nell'array
-            $data = pg_fetch_all($queryRecords);
-            // return dell'array dei record
-            return $data;
+        public function setValue(string $table, string $riga, string $colonna) {
+            // query di update
+            $query = "UPDATE public.\"$table\"
+                SET $colonna = f
+                WHERE $riga";
+            pg_query($this->conn, $query);
         }
     }
 
