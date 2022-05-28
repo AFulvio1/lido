@@ -365,25 +365,6 @@ p{
 
 
 
-/* FOOTER */
-footer {
-  background-color: #57AEE7;
-  align-items: center;
-  text-align: center;
-  height: 300px;
-  width: 100%;
-}
-
-.footer-icon-container {
-  margin: 0 auto;
-}
-
-footer > div > p {
-  color: white;
-  text-emphasis: bold;
-}
-
-
 /* Pagine */
 
 /* ! Poster */

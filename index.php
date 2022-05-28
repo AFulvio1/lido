@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lido</title>
+  <title>Sunsea Resort</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
@@ -68,45 +68,19 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Coockie -->
-  <script src="/static/js/coockie.js"></script>
+  <script type="text/javascript" src="/static/js/coockie.js"></script>
 
   <!-- Hamburger -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $( ".hamburger" ).on('click', function() {
-        $(".menu").toggleClass("menu--open");
-      });
-    });
-  </script>
+  <script type="text/javascript" src="/static/js/hamburger.js"></script>
 
   <!-- Load HTML -->
-  <script type="text/javascript">
-    $(function () {
-      $(document).ready(function () {
-        $(".load-html").each(function () {
-          var container = '#' + $(this).attr('data-container');
-          var src = $(this).attr('data-source');
-          $(container).load(src);
-        });
-      });
-    });
-  </script>
+  <script type="text/javascript" src="/static/js/load-html.js"></script>
 
   <!-- Navbar -->
-  <script type="text/javascript">
-  $(function () {
-      $(window).on('scroll', function () {
-          if ( $(window).scrollTop() > 10 ) {
-              $('.navbar').addClass('active');
-          } else {
-              $('.navbar').removeClass('active');
-          }
-      });
-  });
-  </script>
+  <script type="text/javascript" src="/static/js/navbar.js"></script>
 
   <!-- Contatti -->
-  <script src="/static/js/contatti.js"></script>
+  <script type="text/javascript" src="/static/js/contatti.js"></script>
     
 </body>
 

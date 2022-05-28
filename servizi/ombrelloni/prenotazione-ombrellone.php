@@ -8,7 +8,7 @@
     $_SESSION['previous'] = basename($_SERVER['PHP_SELF']);
 
     $_SESSION['id'] = $params['numero'];
-    $_SESSION['conto'] = $params['conto'];
+    $_SESSION['conto'] = $params['costo'];
     $_SESSION['riga'] = $params['riga'];
     $_SESSION['colonna'] = $params['colonna'];
     $_SESSION['counter_lettini'] = 0;
@@ -67,8 +67,8 @@
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-8">- Ombrellone selezionato: <?php echo $params['n']?></div>
-                        <div class="col-lg-1"><?php echo $params['c']?> €</div>
+                    <div class="col-lg-8">- Ombrellone selezionato: <?php echo $params['numero']?></div>
+                        <div class="col-lg-1"><?php echo $params['costo']?> €</div>
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
@@ -140,7 +140,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-lg-4 offset-lg-8">
-                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>, riga=<?php echo $_SESSION['riga']; ?>, colonna=<?php echo $_SESSION['colonna']; ?>)">Procedi al modulo di pagamento</button>
+                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>, riga=<?php echo $_SESSION['riga']; ?>, colonna='<?php echo $_SESSION['colonna']; ?>')">Procedi al modulo di pagamento</button>
                     </div>
                 </div>
             </div>

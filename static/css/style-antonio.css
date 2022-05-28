@@ -245,7 +245,8 @@
 
 #ombrelloni {
   margin: 100px;
-  width: auto;
+  margin-bottom: 150px;
+  width: 80%;
   align-items: center;
   justify-content: center;
 }
@@ -257,34 +258,38 @@
 
 
 /*  CONTENITORE PULSANTI PAGINA OMBRELLONI  */
-.flexbox-container {
+#ombrelloni >.flexbox-container {
   display: flex;
+  width: fit-content;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 30px;
 }
-.row {
+#ombrelloni >.flexbox-container > .row {
   width: 100%;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #57AEE7;
+  border: 2px solid #57AEE7;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.item {
+#ombrelloni >.flexbox-container > .row > .item {
   height: 40px;
   width: 40px;
   margin: 2px;
   padding: 0%;
 }
-.item-id {
-  display: flex;
+#ombrelloni >.flexbox-container > .row > .item-id {
   height: 40px;
-  width: 40px;
-  margin: 2px;
-  padding-top: 6px;
-  margin-right: 20px;
+  width: 120px;
+  line-height: 40px;
   color: #57AEE7;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
 }
-.btn-umbrella {
+#ombrelloni >.flexbox-container > .row > .item > .btn-umbrella {
   width: 40px;
   height: 40px;
   padding: 0%;
@@ -292,8 +297,9 @@
   border-radius: 50%;
   color: #fff;
   background-color: #57AEE7;
+  font-size: 18px;
 }
-.btn-umbrella:hover {
+#ombrelloni >.flexbox-container > .row > .item > .btn-umbrella:hover {
   color: #fff;
   border: 2px solid #57AEE7;
 }
@@ -421,15 +427,43 @@
 
 
 
-
-
-.fa-brands {
+/* ---------------------------------------------------------------------------- FOOTER -------------------------------------------------------------------------------- */
+footer {
+  background-color: #57AEE7;
+  width: 100%;
+  height: fit-content;
+}
+footer > .container > .row {
+  margin: 15px;
+  padding: 0px;
+}
+footer > .container > .row > .col-lg-2 > a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #fff;
+}
+footer > .container > .row > .col-lg-12 > a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 0px;
+}
+footer > .container > .row > .col-lg-12 > p {
+  color: #fff;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+footer > .container > .row > .col-lg-12 > .footer-icon-container > span > a > i{
   margin: 3px;
   font-size: 20px;
-  text-align: center;
-  justify-content: center;
+  padding: 0px;
 }
-
-.nav-link {
-  font-size: 20px;
+footer > .container > .row > .col-lg-12 > .footer-icon-container{
+  margin: 0px;
+  padding: 0px;
 }
