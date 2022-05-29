@@ -16,42 +16,42 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
-  <link rel="stylesheet" href="/lido/static/css/style.css">
-  <link rel="stylesheet" href="/lido/static/css/style-antonio.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/style-antonio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="/lido/static/css/coockie.css" async>
+  <link rel="stylesheet" href="/static/css/coockie.css" async>
 </head>
 
 <body>
   
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
-  <span class="load-html" data-container="navbar-container" data-source="/lido/partials/navbar-bootstrap.html"></span>
+  <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
       
   <!-- HERO -->
   <span id="hero-container"></span>
-  <span class="load-html" data-container="hero-container" data-source="/lido/partials/hero-home.html"></span>
+  <span class="load-html" data-container="hero-container" data-source="/partials/hero-home.html"></span>
 
   
   <!-- SERVIZI -->
   <span id="servizi-container"></span>
-  <span class="load-html" data-container="servizi-container" data-source="/lido/partials/servizi.html"></span>
+  <span class="load-html" data-container="servizi-container" data-source="/partials/servizi.html"></span>
 
 
   <!-- GALLERIA-->
   <span id="galleria-container"></span>
-  <span class="load-html" data-container="galleria-container" data-source="/lido/partials/galleria.html"></span>
+  <span class="load-html" data-container="galleria-container" data-source="/partials/galleria.html"></span>
 
 
   <!-- CONTATTI -->
   <span id="contact-container"></span>
-  <span class="load-html" data-container="contact-container" data-source="/lido/partials/contact.html"></span>
+  <span class="load-html" data-container="contact-container" data-source="/partials/contact.html"></span>
 
  
   <!-- FOOTER -->
   <span id="footer-container"></span>
-  <span class="load-html" data-container="footer-container" data-source="/lido/partials/footer.html"></span>
+  <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 
 
 
@@ -65,19 +65,19 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Coockie -->
-  <script type="text/javascript" src="/lido/static/js/coockie.js"></script>
+  <script type="text/javascript" src="/static/js/coockie.js"></script>
 
   <!-- Hamburger -->
-  <script type="text/javascript" src="/lido/static/js/hamburger.js"></script>
+  <script type="text/javascript" src="/static/js/hamburger.js"></script>
 
   <!-- Load HTML -->
-  <script type="text/javascript" src="/lido/static/js/load-html.js"></script>
+  <script type="text/javascript" src="/static/js/load-html.js"></script>
 
   <!-- Navbar -->
-  <script type="text/javascript" src="/lido/static/js/navbar.js"></script>
+  <script type="text/javascript" src="/static/js/navbar.js"></script>
 
   <!-- Contatti -->
-  <script type="text/javascript" src="/lido/static/js/contatti.js"></script>
+  <script type="text/javascript" src="/static/js/contatti.js"></script>
     
 </body>
 
