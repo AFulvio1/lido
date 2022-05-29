@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/static/css/coockie.css" async>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,11 +40,11 @@
   
   <div id="miniclub">
     <div class="container">
-      <div class="intro">
+      <div class="intro" data-aos="fade-up">
         <p>In spiaggia tutto ciò che desideri per i tuoi bimbi in vacanza, un ambiente familiare con tanti servizi per i bambini di tutte le età, per farvi sentire proprio come a casa.Vasto parco giochi per bambini completamente recintato e assistito da animatrici. Il Mini Club rimane aperto anche la sera dopo cena.</p>
       </div>
 
-      <div class="poster2 mt-3">
+      <div class="poster2 mt-3" data-aos="fade-up">
         <div class="poster2__img reveal">
           <img src="/static/img/miniclubfoto1.png" alt="">
         </div>
@@ -59,13 +60,13 @@
         </div>
       </div>
       
-      <div class="img_miniclub">
+      <div class="img_miniclub" data-aos="fade-up">
         <img src="/static/img/miniclubfoto2.png" alt="">
       </div>
 
         
 
-      <div class="poster2 mt-3">
+      <div class="poster2 mt-3" data-aos="fade-up">
         <div class="poster2__img reveal">
           <img src="/static/img/miniclubfoto3.png" alt="">
         </div>
@@ -77,7 +78,7 @@
       </div>
 
     
-      <div class="grid mt-3">
+      <div class="grid mt-3" data-aos="fade-up">
         <div class="col reveal">
           <h7>Galleria </h7>
         </div>
@@ -85,7 +86,7 @@
       <br>
       <br>
 
-      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel" data-aos="fade-up" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
           <img src="/static/img/miniclub2.png" alt="" />
         </div>
@@ -189,6 +190,12 @@
           }
       });
   });
+  </script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
   </script>
 
 </body>

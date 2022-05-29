@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="/static/css/coockie.css" async>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,11 +44,11 @@
 
   <div id="tour">
     <div class="container">
-      <div class="intro">
+      <div class="intro" data-aos="fade-up">
         <p>Con il suo stile di vita rilassato sull'isola, il paesaggio pittoresco e le viste mozzafiato sull'oceano, la Costa Smeralda rimane oggi una delle destinazioni più popolari in Italia. È famosa in tutto il mondo per il mare color smeraldo, le sue piazzette ricche di vita mondana e i suoi servizi d’alta qualità, è la località più esclusiva del nord-est della Sardegna.Due rocce granitiche recanti il nome ti accoglieranno all’arrivo, una a sud, sulla strada che da Olbia porta ai suoi luoghi più rinomati, e una a nord, sulla strada che conduce all’azzurra esplendente Baja Sardinia.</p>
       </div>
 
-      <div class="poster2 mt-3">
+      <div class="poster2 mt-3" data-aos="fade-up">
           <div class="poster2__img reveal">
               <img src="/static/img/cittàfoto2.png" alt="">
           </div>
@@ -57,11 +58,11 @@
           </div>
       </div>
 
-      <div class="img_città">
+      <div class="img_città" data-aos="fade-up">
           <img src="/static/img/cittàfoto3.png" alt="">
       </div>
 
-      <div class="poster2 mt-3">
+      <div class="poster2 mt-3" data-aos="fade-up">
           <div class="poster2__content reveal">
               <h7>Scopri la città...</h7>
               <p>La Costa Smeralda è una destinazione unica dove acque turchesi cristalline, spiagge incontaminate, riserve naturali incontaminate e un'architettura mozzafiato convivono in armonia insieme a hotel di lusso, centri benessere, boutique di design, ristoranti di classe mondiale e eccitante vita notturna. Uno straordinario panorama di case nascoste ricoperte di vegetazione mediterranea, oltre a numerose ville, campi da golf e porti turistici, sembrano vivere in armonia con l'ambiente. Aggiungi la storia unica, la cultura e le antiche tradizioni della regione e c'è un luogo di vacanza affascinante da scoprire. Ma se sei venuto per lo sfarzo e il glamour di un resort sulla spiaggia, sei nel posto giusto. Le numerose barche da pesca oggi sono state sostituite con yacht di lusso e le numerose spiagge e calette sono bellissime.</p>
@@ -70,10 +71,10 @@
               <img src="/static/img/cittàfoto1.png" alt="">
           </div>
       </div>
-      <h7>Cosa visitare</h7>
-      <div class="container">
+      <h7 data-aos="fade-up">Cosa visitare</h7>
+      <div class="container" data-aos="fade-up">
         <div class="row big-padding">
-          <div class="col-md-3 col-xs-6" style="text-align: center;">
+          <div class="col-md-4 col-xs-6" style="text-align: center;">
             <div class="img-chiesa">
                 <img src="/static/img/cittàmonumenti1.png" alt="">
             </div>
@@ -81,7 +82,7 @@
             <h8>Chiesa di Stella Maris</h8>
             <p>La chiesa Stella Maris ha un porticato antistante sorretto da sei monoliti e sulla punta si trova una croce di ferro.I dettagli dell’edificio son o di grande suggestione, come le finestre con cornice decorativa ed il pavimento con “fette” di granito.</p>
           </div>
-            <div class="col-md-3 col-xs-6" style="text-align: center;">
+            <div class="col-md-4 col-xs-6" style="text-align: center;">
                 <div class="img-chiesa">
                     <img src="/static/img/cittàmonumenti2.png" alt="">
                 </div>
@@ -89,7 +90,7 @@
                 <h8>Grande Pevero</h8>
                 <p>A nord-est della Sardegna, nei riflessi turchesi del mare si immerge una distesa di sabbia fine, fiancheggiata da macchia mediterranea e scogli modellati dal tempo, tipici della Gallura: è una delle spiagge smeraldine più esclusive</p>
             </div>
-            <div class="col-md-3 col-xs-6" style="text-align: center;">
+            <div class="col-md-4 col-xs-6" style="text-align: center;">
                 <div class="img-chiesa">
                     <img src="/static/img/cittàmonumenti3.png" alt="">
                 </div>
@@ -99,9 +100,9 @@
             </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row big-padding">
-          <div class="col-md-3 col-xs-6" style="text-align: center;">
+          <div class="col-md-4 col-xs-6" style="text-align: center;">
             <div class="img-chiesa">
               <img src="/static/img/cittàmonumenti4.png" alt="">
             </div>
@@ -109,7 +110,7 @@
             <h8>Razza di Giunco</h8>
             <p>'Porta d’accesso' della Costa Smeralda, Cala Razza di Giunco, in realtà, comprende quattro spiagge, in mezzo alle quali si affacciano promontori, isolotti e fiordi, creando uno scenario spettacolare, incastonato tra scogli di granito rosa.</p>
           </div>
-          <div class="col-md-3 col-xs-6" style="text-align: center;">
+          <div class="col-md-4 col-xs-6" style="text-align: center;">
             <div class="img-chiesa">
               <img src="/static/img/cittàmonumenti5.png" alt="">
             </div>
@@ -117,7 +118,7 @@
             <h8>Portisco</h8>
             <p>Portisco è una meta ideale alle soglie della Costa Smeralda, adatta a tutte le tipologie di turisti e dotata di ogni comfort.Moderno porticciolo a sud, accogliente spiaggia, si trova in territorio di Olbia ma è un ‘anticipo’ di Costa Smeralda</p>
           </div>
-          <div class="col-md-3 col-xs-6" style="text-align: center;">
+          <div class="col-md-4 col-xs-6" style="text-align: center;">
             <div class="img-chiesa">
               <img src="/static/img/cittàmonumenti6.png" alt="">
             </div>
@@ -128,7 +129,7 @@
         </div>
       </div>
 
-      <div class="grid mt-3">
+      <div class="grid mt-3" data-aos="fade-up">
         <div class="col reveal">
           <h7>Galleria</h7>
         </div>
@@ -136,7 +137,7 @@
       <br>
       <br>
 
-      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel" data-aos="fade-up" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
           <img src="/static/img/città2.png" alt="" />
         </div>
@@ -227,6 +228,11 @@
           }
       });
   });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
   </script>
 
 </body>

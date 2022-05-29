@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="/static/css/coockie.css" async>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,12 +39,12 @@
 
   <div id="eventi">
     <div class="container">
-      <div class="intro">
+      <div class="intro" data-aos="fade-up">
         <p>Eventi sportivi, eventi moda, feste e tanto divertimento presso il Sunsea. La struttura offre, infatti, una cornice perfetta per ricevimenti, feste, eventi sportivi, sfilate e cerimonie. Il Sunsea è anche tutto questo, ma anche tanto altro ancora, in base alle vostre richieste e alla vostra fantasia.</p>
       </div>
 
 
-      <div class="poster2 mt-3">
+      <div class="poster2 mt-3" data-aos="fade-up">
         <div class="poster2__img reveal">
           <img src="/static/img/eventifoto.png" alt="">
         </div>
@@ -55,14 +56,14 @@
       </div>
     
 
-      <div class="grid mt-3">
+      <div class="grid mt-3" data-aos="fade-up">
         <div class="col reveal">
           <h7>Galleria </h7>
         </div>
       </div>
       <br>
 
-      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel" data-aos="fade-up" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
           <img src="/static/img/eventi2.png" alt="" />
         </div>
@@ -164,6 +165,11 @@
           }
       });
   });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
   </script>
 
 </body>

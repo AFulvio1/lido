@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/static/css/coockie.css" async>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,11 +40,11 @@
     <div id="ristorante">
         <div class="container">
 
-            <div class="intro">
+            <div class="intro" data-aos="fade-up">
                 <p>Il ristorante del Sunsea gode di un suggestivo affaccio sul Mare. Luminoso e rilassante, domina l'intero resort e regala ai suoi ospiti un riuscito mix di classici della cucina italiana e gustosi menù di pesce, cucinati sempre tenendo conto della stagionalità e della freschezza delle materie prime.</p>
             </div>
 
-            <div class="poster2 mt-3">
+            <div class="poster2 mt-3" data-aos="fade-up">
                 <div class="poster2__content reveal">
                     <h7>Il ristorante</h7>
                     <p>Il ristorante di cucina tipica di mare del Sunsea dispone di una sala panoramica e di tavoli all'aperto. Il servizio di ristorazione è aperto tutto l'anno. La sala è a disposizione anche per banchetti, feste di compleanno, cerimonie e cene di lavoro su prenotazione. La cucina proposta dallo chef è attenta alla stagionalità delle materie prime. Il Pesce è una delle Specialità del nostro Ristorante, grazie alla qualità e la freschezza della materia prima e ai nostri menù. Cucinare il Pesce è un’arte e la freschezza del Pesce l’aspetto più importante. Al Ristorante potrai trovare pesce fresco stagionale a secondo della disponibilità.</p>
@@ -55,14 +56,14 @@
             <br>
             <br>
 
-            <ul class="img_menù">
+            <ul class="img_menù" data-aos="fade-up">
                 <img src="/static/img/ristorantemenù1.png" alt="">
                 <img src="/static/img/ristorantemenù2.png" alt="">
             </ul>
             <br>
             <br>
 
-            <ul class="img_menù">
+            <ul class="img_menù" data-aos="fade-up">
                 <img src="/static/img/ristorantemenù3.png" alt="">
                 <img src="/static/img/ristorantemenù4.png" alt="">
             </ul>
@@ -70,7 +71,7 @@
             <br>
             <br>
 
-            <div class="grid mt-3">
+            <div class="grid mt-3" data-aos="fade-up">
                 <div class="col reveal">
                     <h7>Galleria</h7>
                 </div>
@@ -200,5 +201,11 @@
         });
     });
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
