@@ -1,7 +1,7 @@
 // --- Config --- //
 var purecookieTitle = "Questo sito utilizza dei Cookie"; // Title
 var purecookieDesc = "Utiliziamo pochi coockie per il minimo necessario, per saperne di più:"; // Description
-var purecookieLink = '<a href="/privacy-coockie-policy.php" target="_blank">Privacy & Coockie Policy</a>'; // Cookiepolicy link
+var purecookieLink = '<a href="/lido/privacy-coockie-policy.php" target="_blank">Privacy & Coockie Policy</a>'; // Cookiepolicy link
 var purecookieButton = "Ho capito"; // Button text
 // ---        --- //
 

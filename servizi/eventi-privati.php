@@ -20,21 +20,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imprima:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great Vibes:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Voltaire:wght@300;400;700;900&display=swap">
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="stylesheet" href="/static/css/style-antonio.css">
+  <link rel="stylesheet" href="/lido/static/css/style.css">
+  <link rel="stylesheet" href="/lido/static/css/style-antonio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="/static/css/coockie.css" async>
+  <link rel="stylesheet" href="/lido/static/css/coockie.css" async>
 </head>
 
 <body>
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
-  <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
+  <span class="load-html" data-container="navbar-container" data-source="/lido/partials/navbar-bootstrap.html"></span>
 
   <!-- HERO -->
   <span id="hero-container"></span>
-  <span class="load-html" data-container="hero-container" data-source="/partials/hero-eventi.html"></span>
+  <span class="load-html" data-container="hero-container" data-source="/lido/partials/hero-eventi.html"></span>
 
   <div id="eventi">
     <div class="container">
@@ -45,7 +45,7 @@
 
       <div class="poster2 mt-3">
         <div class="poster2__img reveal">
-          <img src="/static/img/eventifoto.png" alt="">
+          <img src="/lido/static/img/eventifoto.png" alt="">
         </div>
         <div class="poster2__content reveal">
           <h7>Matrimoni</h7>
@@ -64,31 +64,31 @@
 
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
-          <img src="/static/img/eventi2.png" alt="" />
+          <img src="/lido/static/img/eventi2.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi3.png" alt="" />
+          <img src="/lido/static/img/eventi3.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi4.png" alt="" />
+          <img src="/lido/static/img/eventi4.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi5.png" alt="" />
+          <img src="/lido/static/img/eventi5.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi6.png" alt="" />
+          <img src="/lido/static/img/eventi6.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi7.png" alt="" />
+          <img src="/lido/static/img/eventi7.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi8.png" alt="" />
+          <img src="/lido/static/img/eventi8.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi9.png" alt="" />
+          <img src="/lido/static/img/eventi9.png" alt="" />
         </div>
         <div class="carousel-cell">
-          <img src="/static/img/eventi1.png" alt="" />
+          <img src="/lido/static/img/eventi1.png" alt="" />
         </div>
       </div>
     </div>
@@ -103,13 +103,13 @@
 
   <!-- FOOTER DA FARE -->
   <span id="footer-container"></span>
-  <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
+  <span class="load-html" data-container="footer-container" data-source="/lido/partials/footer.html"></span>
 
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <!-- SCRIPTS
   <span id="scripts-container"></span>
-  <span class="load-html" data-container="scripts-container" data-source="/partials/scripts.html"></span> -->
+  <span class="load-html" data-container="scripts-container" data-source="/lido/partials/scripts.html"></span> -->
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -118,7 +118,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Coockie -->
-  <script src="/static/js/coockie.js" async></script>
+  <script src="/lido/static/js/coockie.js" async></script>
 
   <!-- Hamburger -->
   <script type="text/javascript">

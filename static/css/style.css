@@ -857,5 +857,13 @@ footer {
         color: white;
     }
     /* Fine tour della città */
+
+    .navbar-brand{
+        margin-right: 0;
+    }
+
+    .navbar-collapse{
+        background-color: #57AEE7;
+    }
 }
 
