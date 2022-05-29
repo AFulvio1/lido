@@ -33,10 +33,7 @@
   <span id="hero-container"></span>
   <span class="load-html" data-container="hero-container" data-source="/partials/hero-home.html"></span>
 
-  <!-- POSTER -->
-  <span id="poster-container"></span>
-  <span class="load-html" data-container="poster-container" data-source="/partials/poster.html"></span>
-
+  
   <!-- SERVIZI -->
   <span id="servizi-container"></span>
   <span class="load-html" data-container="servizi-container" data-source="/partials/servizi.html"></span>
