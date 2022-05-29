@@ -62,70 +62,70 @@
             </div>
 
             <div class="row no-bg">
-                <div class="col col-lg-12 col-md-12 col-sm-12">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
+                <div class="alert col col-lg-12 col-md-12 col-sm-12">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
             </div>
 
             <div class="row">
-                <div class="col col-lg-10 col-md-10 col-sm-10">Ombrellone selezionato: <?php echo $params['numero']?></div>
-                <div class="col col-lg-2 col-md-2 col-sm-2"><?php echo $params['costo']?> €</div>
+                <div class="col col-lg-10 col-md-10 col-sm-12">Ombrellone selezionato: <?php echo $params['numero']?></div>
+                <div class="col col-lg-2 col-md-2 col-sm-12"><?php echo $params['costo']?> €</div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-">Seleziona i lettini: </div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-7 col-md-7 col-sm-12">Seleziona i lettini: </div>
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="aggiungi-lettino" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiLettino">+</button>
                     </form>
                 </div>
-                <div id="counter-lettini" class="col-lg-1 col-md-1 col-sm-1">
+                <div id="counter-lettini" class="col-lg-1 col-md-1 col-sm-3">
                     <?php echo $_SESSION['counter_lettini']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="rimuovi-lettino" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviLettino">-</button>
                     </form>
                 </div>
-                <div id="saldo-lettini" class="col-lg-2 col-md-2 col-sm-2">
+                <div id="saldo-lettini" class="col-lg-2 col-md-2 col-sm-3">
                     <?php echo $_SESSION['saldo_lettini']." €"; ?>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-">Seleziona le sdraio: </div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-7 col-md-7 col-sm-12">Seleziona le sdraio: </div>
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="aggiungi-sdraio" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiSdraio">+</button>
                     </form>
                 </div>
-                <div id="counter-sdraio" class="col-lg-1 col-md-1 col-sm-1">
+                <div id="counter-sdraio" class="col-lg-1 col-md-1 col-sm-3">
                     <?php echo $_SESSION['counter_sdraio']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="rimuovi-sdraio" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviSdraio">-</button>
                     </form>
                 </div>
-                <div id="saldo-sdraio" class="col-lg-2 col-md-2 col-sm-2">
+                <div id="saldo-sdraio" class="col-lg-2 col-md-2 col-sm-3">
                     <?php echo $_SESSION['saldo_sdraio']." €"; ?>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-">Vuoi inserire anche una cabina?</div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-7 col-md-7 col-sm-12">Vuoi inserire anche una cabina?</div>
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="aggiungi-cabina" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiCabina">+</button>
                     </form>
                 </div>
-                <div id="counter-cabina" class="col-lg-1 col-md-1 col-sm-1">
+                <div id="counter-cabina" class="col-lg-1 col-md-1 col-sm-3">
                     <?php echo $_SESSION['counter_cabina']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1">
+                <div class="col-lg-1 col-md-1 col-sm-3">
                     <form id="rimuovi-cabina" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviCabina">-</button>
                     </form>
                 </div>
-                <div id="saldo-cabina" class="col-lg-2 col-md-2 col-sm-2">
+                <div id="saldo-cabina" class="col-lg-2 col-md-2 col-sm-3">
                     <?php echo $_SESSION['saldo_cabina']." €"; ?>
                 </div>
             </div>
@@ -166,42 +166,19 @@
     <script src="/static/js/coockie.js" async></script>
 
     <!-- Hamburger -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $( ".hamburger" ).on('click', function() {
-                $(".menu").toggleClass("menu--open");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/hamburger.js"></script>
 
     <!-- Buttons -->
+    <script type="text/javascript" src="/static/js/buttons.js"></script>
+
+    <!-- Buttons Prenotazione -->
     <script type="text/javascript" src="/static/js/pagina-prenotazione.js"></script>
 
     <!-- Load HTML -->
-    <script type="text/javascript">
-        $(function () {
-            $(document).ready(function () {
-                $(".load-html").each(function () {
-                    var container = '#' + $(this).attr('data-container');
-                    var src = $(this).attr('data-source');
-                    $(container).load(src);
-                });
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/load-html.js"></script>
 
     <!-- Navbar -->
-    <script type="text/javascript">
-    $(function () {
-        $(window).on('scroll', function () {
-            if ( $(window).scrollTop() > 10 ) {
-                $('.navbar').addClass('active');
-            } else {
-                $('.navbar').removeClass('active');
-            }
-        });
-    });
-    </script>
+    <script type="text/javascript" src="/static/js/navbar.js"></script>
 
 </body>
 </html>

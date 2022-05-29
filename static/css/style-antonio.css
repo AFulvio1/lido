@@ -244,11 +244,13 @@
 /*------------------------------------------------------------------------ OMBRELLONI --------------------------------------------------------------------------------------*/
 
 #ombrelloni {
-  margin: 100px;
-  margin-bottom: 150px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   width: 80%;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
 }
 
 #ombrelloni > h1 {
@@ -269,7 +271,6 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  border: 2px solid #57AEE7;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -289,7 +290,7 @@
   text-align: center;
   justify-content: center;
 }
-#ombrelloni >.flexbox-container > .row > .item > .btn-umbrella {
+.btn-umbrella {
   width: 40px;
   height: 40px;
   padding: 0%;
@@ -304,25 +305,44 @@
   border: 2px solid #57AEE7;
 }
 
+#ombrelloni > .container > .row > .right {
+  text-align: right;
+  vertical-align: middle;
+}
+
+#ombrelloni > .container > .row > .left {
+  text-align: left;
+  vertical-align: middle;
+}
+
+#ombrelloni > .container > .row > .left > button {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #ombrelloni >.flexbox-container > .row {
+    border: 2px solid #57AEE7;
+  }
+}
 
 /*--------------------------------------------------------------------------- PRENOTAZIONE --------------------------------------------------------------------------------------*/
 
 
 #prenotazione {
-  max-width: 60%;
-  border: solid 10px #57AEE7;
-  border-radius: 10px;
-  background-color: #57AEE7;
-  margin: 50px;
-  margin-top: 100px;
+  height: 800px;
+  line-height: 800px;
   text-align: center;
-  justify-content: center;
   vertical-align: middle;
 }
 
 #prenotazione > .container {
-  margin: 0px;
-  padding: 20px;
+  width: 75%;
+  border: solid 10px #57AEE7;
+  border-radius: 10px;
+  background-color: #57AEE7;
+  margin: auto;
+  margin-top: 150px;
 }
 
 #prenotazione > .container > .row {
@@ -332,6 +352,7 @@
   line-height: 50px;
   margin: 20px;
   border-bottom: 2px solid #fff;
+  font-size: 20px;
   text-align: left;
   vertical-align: middle;
 }
@@ -341,7 +362,7 @@
 }
 
 #prenotazione > .container > .row > .col-lg-1 {
-  text-align: right;
+  text-align: center;
 }
 
 #prenotazione > .cntainer > .row > [class*="col-"] {
@@ -353,19 +374,27 @@
 #prenotazione > .container > .row > .col-lg-12 > h1 {
   color: #fff;
   font-family: 'Imprima', sans-serif;
+  font-weight: bold;
+}
+
+.alert {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 18px;
 }
 
 
 .btn-prenotazione {
   width: 30px;
   height: 30px;
+  font-size: 20px;
+  font-weight: bold;
   line-height: 30px;
   color: #57AEE7;
   background-color: #fff;
   border: 1px solid #57AEE7;
   border-radius: 50%;
   text-align: center;
-  vertical-align: middle;
 }
 
 .btn-pagamento {
@@ -378,16 +407,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #ombrelloni {
-    margin: 20px;
-  }
-  #prenotazione {
-    max-width: 100%;
-  }
-  #prenotazione > .container {
-    margin: 0px;
-    padding: 5px;
-  }
   #prenotazione > .container > .row > .col-lg-12 > h1 {
     font-size: 35px;
   }
@@ -510,4 +529,10 @@ footer > .container > .row > .col-lg-12 > .footer-icon-container{
   padding: 0px;
   border-top: 2px solid #fff;
   padding-top: 15px;
+}
+
+
+#coockie {
+  margin: 50px;
+  text-align: left;
 }

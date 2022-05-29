@@ -67,49 +67,16 @@
     <script src="/static/js/coockie.js" async></script>
 
     <!-- Hamburger -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $( ".hamburger" ).on('click', function() {
-                $(".menu").toggleClass("menu--open");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/hamburger.js"></script>
 
     <!-- Buttons -->
-    <script type="text/javascript">
-        function buttonChoise() {
-            /** choise: true if ok, false else */
-            var choise = confirm("Vuoi confermare la scelta?");
-        }
-        function buttonAlert() {
-            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
-        }
-    </script>
+    <script type="text/javascript" src="/static/js/buttons.js"></script>
 
     <!-- Load HTML -->
-    <script type="text/javascript">
-        $(function () {
-            $(document).ready(function () {
-                $(".load-html").each(function () {
-                    var container = '#' + $(this).attr('data-container');
-                    var src = $(this).attr('data-source');
-                    $(container).load(src);
-                });
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/load-html.js"></script>
 
     <!-- Navbar -->
-    <script type="text/javascript">
-    $(function () {
-        $(window).on('scroll', function () {
-            if ( $(window).scrollTop() > 10 ) {
-                $('.navbar').addClass('active');
-            } else {
-                $('.navbar').removeClass('active');
-            }
-        });
-    });
-    </script>
+    <script type="text/javascript" src="/static/js/navbar.js"></script>
+
 </body>
 </html>
