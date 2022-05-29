@@ -67,20 +67,20 @@
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-8">- Ombrellone selezionato: <?php echo $params['numero']?></div>
+                    <div class="col-lg-8">Ombrellone selezionato: <?php echo $params['numero']?></div>
                         <div class="col-lg-1"><?php echo $params['costo']?> €</div>
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">- Seleziona i lettini: </div>
+                    <div class="col-lg-5">Seleziona i lettini: </div>
                     <div class="col-lg-1">
                         <form id="aggiungi-lettino" action="#" method="post">
-                            <input type="submit" name="aggiungiLettino" value="+" >
+                            <input class="btn-prenotazione" type='submit' name="aggiungiLettino" value="+" >
                         </form>
                     </div>
                     <div class="col-lg-1">
                     <form id="rimuovi-lettino" action="#" method="post">
-                            <input type="submit" name="rimuoviLettino" value="-" >
+                            <input class="btn-prenotazione" type='submit' name="rimuoviLettino" value="-" >
                         </form>
                     </div>
                     <div id="counter-lettini" class="col-lg-1">
@@ -92,15 +92,15 @@
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">- Seleziona le sdraio: </div>
+                    <div class="col-lg-5">Seleziona le sdraio: </div>
                     <div class="col-lg-1">
                         <form id="aggiungi-sdraio" action="#" method="post">
-                            <input type="submit" name="aggiungiSdraio" value="+" >
+                            <input class="btn-prenotazione" type='submit' name="aggiungiSdraio" value="+" >
                         </form>
                     </div>
                     <div class="col-lg-1">
                     <form id="rimuovi-sdraio" action="#" method="post">
-                            <input type="submit" name="rimuoviSdraio" value="-" >
+                            <input class="btn-prenotazione" type='submit' name="rimuoviSdraio" value="-" >
                         </form>
                     </div>
                     <div id="counter-sdraio" class="col-lg-1">
@@ -112,15 +112,15 @@
                 </div>
 
                 <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">- Vuoi inserire anche una cabina?</div>
+                    <div class="col-lg-5">Vuoi inserire anche una cabina?</div>
                     <div class="col-lg-1">
                         <form id="aggiungi-cabina" action="#" method="post">
-                            <input type="submit" name="aggiungiCabina" value="+" >
+                            <input class="btn-prenotazione" type='submit' name="aggiungiCabina" value="+" >
                         </form>
                     </div>
                     <div class="col-lg-1">
                     <form id="rimuovi-cabina" action="#" method="post">
-                            <input type="submit" name="rimuoviCabina" value="-" >
+                            <input class="btn-prenotazione" type='submit' name="rimuoviCabina" value="-" >
                         </form>
                     </div>
                     <div id="counter-cabina" class="col-lg-1">

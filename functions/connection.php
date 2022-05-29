@@ -53,7 +53,7 @@
         public function getTable(string $table) {
             $this->$table = $table;
             // query di selezione
-            $query = "SELECT * FROM public.\"$table\"";
+            $query = "SELECT * FROM public.$table ORDER BY \"ID\" ASC ";
             // estrazione dei record dal DB
             $queryRecords = pg_query($this->conn, $query) 
                 or die("error to fetch table data");
@@ -63,13 +63,13 @@
             return $data;
         }
 
-        public function setValue(string $riga, string $colonna) {
-            // query di update
-            $query = "UPDATE public.\"$this->$table\"
-                SET $colonna = 'f'
-                WHERE ID = $riga";
-            pg_query($this->conn, $query);
-            pg_close($conn);
+        public function setValue(string $table, string $riga, string $colonna) {
+            $riga_converted = intval($riga);
+            $query = "UPDATE public.$table
+                SET \"$colonna\" = false
+                WHERE \"ID\" =".$riga_converted;
+            pg_query($this->conn, $query) 
+                or die("error to fetch table data");
         }
     }
 

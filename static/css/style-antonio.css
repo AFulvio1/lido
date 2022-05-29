@@ -310,7 +310,7 @@
 /*  */
 #prenotazione{
   background-color: white;
-  height: 1000px;
+  height: fit-content;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -318,8 +318,8 @@
 
 #prenotazione > .box-prenotazione {
   max-width: 60%;
-  border: solid 20px #57AEE7;
-  border-radius: 20px;
+  border: solid 10px #57AEE7;
+  border-radius: 10px;
   background-color: #57AEE7;
   margin: 300px;
   margin-top: 100px;
@@ -354,6 +354,7 @@
 
 #prenotazione > .box-prenotazione > .container > .row > .col-lg-10 > h1 {
   color: #57AEE7;
+  font-family: 'Imprima', sans-serif;
 }
 
 .btn-lettini {
@@ -371,6 +372,21 @@
   border: 3px solid #57AEE7;
 }
 
+.btn-prenotazione {
+  width: 10px;
+  height: 10px;
+  padding: 0%;
+  margin: 1px;
+  border: 0px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #57AEE7;
+}
+.btn-prenotazione:hover {
+  color: #fff;
+  border: 1px solid #57AEE7;
+}
+
 .btn-pagamento {
   width: auto;
   height: auto;
@@ -378,12 +394,28 @@
 
 
 
-
-#caricamento > h1{
-  color: #57AEE7;
+#caricamento {
+  min-height: 100%;
+  max-height: 100%;
+  height: 1000px;
+  line-height: 1000px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: center;
 }
 
-#loader-container{
+#caricamento > h1{
+  color: #fff;
+}
+
+#caricamento > hr {
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+}
+
+#caricamento > #loader-container{
   font-family: "Fira Sans", sans-serif;
   text-align:center;
   padding:20px;
@@ -391,23 +423,26 @@
   vertical-align: center;
 }
 
-.loader{
+#caricamento > #loader-container > .loader{
   display:inline-block;
-  width:15px;
-  height:30px;
+  width:20px;
+  height:50px;
   margin:0.3px;
-  background:#207AC9;
+  background:#fff;
 }
 @keyframes move {
-  0%   {height:30px;}
-  50%  {height:15px;}
-  100% {height:30px;}
+  0%   {height:50px
+;}
+  50%  {height:20px;}
+  100% {height:50px
+;}
 }
 
 @keyframes move2 {
-  0%   {height:15px;}
-  50%  {height:30px;}
-  100% {height:15px;}
+  0%   {height:20px;}
+  50%  {height:50px
+;}
+  100% {height:20px;}
 }
 #loader-one{
   animation-name: move;
@@ -466,4 +501,6 @@ footer > .container > .row > .col-lg-12 > .footer-icon-container > span > a > i{
 footer > .container > .row > .col-lg-12 > .footer-icon-container{
   margin: 0px;
   padding: 0px;
+  border-top: 2px solid #fff;
+  padding-top: 15px;
 }

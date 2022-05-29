@@ -1,16 +1,15 @@
 <?php
-        include("../../functions/geturls.php");
-        $url_components = parse_url($url);
-        parse_str($url_components['query'], $params);
+    include("../../functions/geturls.php");
+    $url_components = parse_url($url);
+    parse_str($url_components['query'], $params);
+    $id = $params['id'];
+    $riga = $params['riga'];
+    $colonna = $params['colonna'];
+    $conto = $params['conto'];
 
-        include('../../functions/connection.php');
-        $db = new DB("localhost","postgres","postgres","lido","5432");
-
-        $id = $params['id'];
-        $riga = $params['riga'];
-        $colonna = $params['colonna'];
-
-        $db.setValue($riga, $colonna);
+    include('../../functions/connection.php');
+    $db = new DB("localhost","postgres","postgres","lido","5432");
+    $db->setValue("umbrellas", $riga, $colonna);
 ?>
 
 <!DOCTYPE html>
@@ -37,13 +36,16 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/static/css/coockie.css" async>
 </head>
-<body>
-    <div id="caricamento">        
+<body style="background-color: #57AEE7;">
+    <div id="caricamento">
         <div id="loader-container">
             <div id="loader-one" class="loader"></div>
             <div id="loader-two" class="loader"></div>
             <div id="loader-three" class="loader"></div>
         </div>
+        <h1>STAI PER ESSERE TRASFERITO AL MODULO DI PAGAMENTO . . .</h1>
+        <hr>
+        <h1> <?php echo "Ombrellone n°".$id." - Totale: ".$conto." €"; ?> </h1>
     </div>
     
 

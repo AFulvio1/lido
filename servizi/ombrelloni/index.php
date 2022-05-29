@@ -51,14 +51,13 @@
         <!-- Inserire commenti -->
         <div class="flexbox-container">
             <?php
-                $n_riga;
+                $n_riga = 1;
                 $n_colonna;
                 $n_umbrella = 400;
                 $costo_fila = 15;
                 $numero_fila = 20;
                 //echo "<hr>";
                 foreach($table as $i => $row) {
-                    $n_riga = $i;
                     echo "<div class=\"row\">";
                     foreach($row as $j => $column) {
                         $n_colonna = $j;
@@ -82,6 +81,7 @@
                     }
                     $costo_fila += 1;
                     $numero_fila -= 1;
+                    $n_riga += 1;
                     echo "</div>";
                     //echo "<hr>";
                 }      
