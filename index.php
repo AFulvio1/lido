@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Lido</title>
-
+    
   <!-- Favicon -->
   <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
@@ -28,14 +28,12 @@
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
   <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
-      
+
+
   <!-- HERO -->
   <span id="hero-container"></span>
   <span class="load-html" data-container="hero-container" data-source="/partials/hero-home.html"></span>
 
-  <!-- POSTER -->
-  <span id="poster-container"></span>
-  <span class="load-html" data-container="poster-container" data-source="/partials/poster.html"></span>
 
   <!-- SERVIZI -->
   <span id="servizi-container"></span>
@@ -55,10 +53,6 @@
   <!-- FOOTER -->
   <span id="footer-container"></span>
   <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
-
-
-
-
 
 
   <!-- Bootstrap -->
