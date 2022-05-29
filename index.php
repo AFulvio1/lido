@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sunsea Resort</title>
+  <title>Lido</title>
+
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
@@ -28,14 +29,12 @@
   <!-- NAVBAR -->
   <span id="navbar-container"></span>
   <span class="load-html" data-container="navbar-container" data-source="/partials/navbar-bootstrap.html"></span>
-      
+
+
   <!-- HERO -->
   <span id="hero-container"></span>
   <span class="load-html" data-container="hero-container" data-source="/partials/hero-home.html"></span>
 
-  <!-- POSTER -->
-  <span id="poster-container"></span>
-  <span class="load-html" data-container="poster-container" data-source="/partials/poster.html"></span>
 
   <!-- SERVIZI -->
   <span id="servizi-container"></span>
@@ -57,10 +56,6 @@
   <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 
 
-
-
-
-
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
@@ -68,19 +63,45 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Coockie -->
-  <script type="text/javascript" src="/static/js/coockie.js"></script>
+  <script src="/static/js/coockie.js"></script>
 
   <!-- Hamburger -->
-  <script type="text/javascript" src="/static/js/hamburger.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+    });
+  </script>
 
   <!-- Load HTML -->
-  <script type="text/javascript" src="/static/js/load-html.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(document).ready(function () {
+        $(".load-html").each(function () {
+          var container = '#' + $(this).attr('data-container');
+          var src = $(this).attr('data-source');
+          $(container).load(src);
+        });
+      });
+    });
+  </script>
 
   <!-- Navbar -->
-  <script type="text/javascript" src="/static/js/navbar.js"></script>
+  <script type="text/javascript">
+  $(function () {
+      $(window).on('scroll', function () {
+          if ( $(window).scrollTop() > 10 ) {
+              $('.navbar').addClass('active');
+          } else {
+              $('.navbar').removeClass('active');
+          }
+      });
+  });
+  </script>
 
   <!-- Contatti -->
-  <script type="text/javascript" src="/static/js/contatti.js"></script>
+  <script src="/static/js/contatti.js"></script>
     
 </body>
 
