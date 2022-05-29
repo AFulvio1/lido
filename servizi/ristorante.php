@@ -74,9 +74,9 @@
                 <div class="col reveal">
                     <h7>Galleria</h7>
                 </div>
-                <div class="col reveal">
+                <!--<div class="col reveal">
                     <p class="mt-2 mt-sma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tenetur sunt unde ut ducimus, fuga quia magni non reiciendis optio. Facilis accusamus vero quo, facere. Soluta molestiae inventore, sit rem!</p>
-                </div>
+                </div>-->
             </div>
             <br>
             <br>

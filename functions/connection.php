@@ -63,13 +63,12 @@
             return $data;
         }
 
-        public function setValue(string $riga, string $colonna) {
+        public function setValue(string $table, string $riga, string $colonna) {
             // query di update
-            $query = "UPDATE public.\"$this->$table\"
-                SET $colonna = 'f'
-                WHERE ID = $riga";
+            $query = "UPDATE public.\"$table\"
+                SET $colonna = f
+                WHERE $riga";
             pg_query($this->conn, $query);
-            pg_close($conn);
         }
     }
 
