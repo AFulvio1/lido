@@ -4,12 +4,13 @@
 
 ### TECNOLOGIE UTILIZZATE
 
+- HTML
+- CSS
+- Javascript
+- PHP
 - Bootstrap
-
 - JQuery
-
 - Postgresql
-
 - Ajax
 
 #### FONT
@@ -20,4 +21,3 @@
 #### COOKIE
 
 - Pure Coockie
-[EOF]

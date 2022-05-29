@@ -20,8 +20,8 @@
     <title>Ombrelloni</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -55,6 +55,7 @@
                 $n_colonna;
                 $n_umbrella = 400;
                 $costo_fila = 15;
+                $numero_fila = 20;
                 //echo "<hr>";
                 foreach($table as $i => $row) {
                     $n_riga = $i;
@@ -62,15 +63,15 @@
                     foreach($row as $j => $column) {
                         $n_colonna = $j;
                         if ($j == "ID") {
-                            echo "<div class=\"item-id\"><strong>";
-                            echo $costo_fila . "€";
-                            echo "</strong></div>";
+                            echo "<div class=\"item-id\">";
+                            echo "Fila n°".$numero_fila.": ".$costo_fila . "€";
+                            echo "</div>";
                             continue;
                         }
                         else {
                             echo "<div class=\"item\">";
                             if ($row[$j] == "t") {
-                                echo "<button type=\"button\" class=\"btn btn-umbrella\" onclick=\"buttonChoise(numero=".$n_umbrella.", costo=".$costo_fila.", riga=".$n_riga.", colonna=".$n_colonna.")\"><strong>".$n_umbrella."</strong></button>";
+                                echo "<button type=\"button\" class=\"btn btn-umbrella\" onclick=\"buttonChoise(numero=".$n_umbrella.", costo=".$costo_fila.", riga=".$n_riga.", colonna='$n_colonna')\"><strong>".$n_umbrella."</strong></button>";
                             }
                             else {
                                 echo "<button type=\"button\" class=\" btn btn-umbrella\" onclick=\"buttonAlert()\" disabled>".$n_umbrella."</button>";
@@ -80,6 +81,7 @@
                         }
                     }
                     $costo_fila += 1;
+                    $numero_fila -= 1;
                     echo "</div>";
                     //echo "<hr>";
                 }      
@@ -96,10 +98,6 @@
     <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 
 
-    
-    <!-- SCRIPTS
-    <span id="scripts-container"></span>
-    <span class="load-html" data-container="scripts-container" data-source="/partials/scripts.html"></span> -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -111,53 +109,16 @@
     <script src="/static/js/coockie.js" async></script>
 
     <!-- Hamburger -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".hamburger").on('click', function() {
-            $(".menu").toggleClass("menu--open");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/hamburger.js"></script>
 
     <!-- Buttons -->
-    <script type="text/javascript">
-        function buttonChoise(numero,costo,riga,colonna) {
-            /** choise: true if ok, false else */
-            var choise = confirm("Vuoi confermare la scelta?");
-            if (choise == true) {
-                window.open("http://localhost:3000/servizi/ombrelloni/prenotazione-ombrellone.php?numero=" + encodeURIComponent(numero) + "&costo=" + encodeURIComponent(costo) + "&riga=" + encodeURIComponent(riga) + "&colonna=" + encodeURIComponent(colonna));
-            }
-        }
-        function buttonAlert() {
-            alert("Purtroppo l'ombrellone selezionato è stato già prenotato!");
-        }
-    </script>
+    <script type="text/javascript" src="/static/js/buttons.js"></script>
 
     <!-- Load HTML -->
-    <script type="text/javascript">
-        $(function () {
-            $(document).ready(function () {
-                $(".load-html").each(function () {
-                    var container = '#' + $(this).attr('data-container');
-                    var src = $(this).attr('data-source');
-                    $(container).load(src);
-                });
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/static/js/load-html.js"></script>
 
     <!-- Navbar -->
-    <script type="text/javascript">
-    $(function () {
-        $(window).on('scroll', function () {
-            if ( $(window).scrollTop() > 10 ) {
-                $('.navbar').addClass('active');
-            } else {
-                $('.navbar').removeClass('active');
-            }
-        });
-    });
-    </script>
+    <script type="text/javascript" src="/static/js/navbar.js"></script>
     
 </body>
 </html>
