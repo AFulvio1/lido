@@ -55,93 +55,91 @@
 
 
     <div id="prenotazione">
-        <div class="box-prenotazione">
-            <div class="container">
+        <div class="container box-prenotazione">
 
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-10 offset-lg-2"><h1>RIEPILOGO PRENOTAZIONE</h1></div>
+            <div class="row no-bg">
+                <div class="col col-lg-12 col-md-12 col-sm-12"><h1>RIEPILOGO PRENOTAZIONE</h1></div>
+            </div>
+
+            <div class="row no-bg">
+                <div class="col col-lg-12 col-md-12 col-sm-12">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-lg-10 col-md-10 col-sm-10">Ombrellone selezionato: <?php echo $params['numero']?></div>
+                <div class="col col-lg-2 col-md-2 col-sm-2"><?php echo $params['costo']?> €</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-">Seleziona i lettini: </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <form id="aggiungi-lettino" action="#" method="post">
+                        <button class="btn-prenotazione" type='submit' name="aggiungiLettino">+</button>
+                    </form>
                 </div>
-
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-10 offset-lg-2">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
+                <div id="counter-lettini" class="col-lg-1 col-md-1 col-sm-1">
+                    <?php echo $_SESSION['counter_lettini']; ?>
                 </div>
-
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-8">Ombrellone selezionato: <?php echo $params['numero']?></div>
-                        <div class="col-lg-1"><?php echo $params['costo']?> €</div>
-                </div>
-
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">Seleziona i lettini: </div>
-                    <div class="col-lg-1">
-                        <form id="aggiungi-lettino" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="aggiungiLettino" value="+" >
-                        </form>
-                    </div>
-                    <div class="col-lg-1">
+                <div class="col-lg-1 col-md-1 col-sm-1">
                     <form id="rimuovi-lettino" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="rimuoviLettino" value="-" >
-                        </form>
-                    </div>
-                    <div id="counter-lettini" class="col-lg-1">
-                        <?php echo $_SESSION['counter_lettini']; ?>
-                    </div>
-                    <div id="saldo-lettini" class="col-lg-1">
-                        <?php echo $_SESSION['saldo_lettini']." €"; ?>
-                    </div>
+                        <button class="btn-prenotazione" type='submit' name="rimuoviLettino">-</button>
+                    </form>
                 </div>
+                <div id="saldo-lettini" class="col-lg-2 col-md-2 col-sm-2">
+                    <?php echo $_SESSION['saldo_lettini']." €"; ?>
+                </div>
+            </div>
 
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">Seleziona le sdraio: </div>
-                    <div class="col-lg-1">
-                        <form id="aggiungi-sdraio" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="aggiungiSdraio" value="+" >
-                        </form>
-                    </div>
-                    <div class="col-lg-1">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-">Seleziona le sdraio: </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <form id="aggiungi-sdraio" action="#" method="post">
+                        <button class="btn-prenotazione" type='submit' name="aggiungiSdraio">+</button>
+                    </form>
+                </div>
+                <div id="counter-sdraio" class="col-lg-1 col-md-1 col-sm-1">
+                    <?php echo $_SESSION['counter_sdraio']; ?>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
                     <form id="rimuovi-sdraio" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="rimuoviSdraio" value="-" >
-                        </form>
-                    </div>
-                    <div id="counter-sdraio" class="col-lg-1">
-                        <?php echo $_SESSION['counter_sdraio']; ?>
-                    </div>
-                    <div id="saldo-sdraio" class="col-lg-1">
-                        <?php echo $_SESSION['saldo_sdraio']." €"; ?>
-                    </div>
+                        <button class="btn-prenotazione" type='submit' name="rimuoviSdraio">-</button>
+                    </form>
                 </div>
+                <div id="saldo-sdraio" class="col-lg-2 col-md-2 col-sm-2">
+                    <?php echo $_SESSION['saldo_sdraio']." €"; ?>
+                </div>
+            </div>
 
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-5">Vuoi inserire anche una cabina?</div>
-                    <div class="col-lg-1">
-                        <form id="aggiungi-cabina" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="aggiungiCabina" value="+" >
-                        </form>
-                    </div>
-                    <div class="col-lg-1">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-">Vuoi inserire anche una cabina?</div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <form id="aggiungi-cabina" action="#" method="post">
+                        <button class="btn-prenotazione" type='submit' name="aggiungiCabina">+</button>
+                    </form>
+                </div>
+                <div id="counter-cabina" class="col-lg-1 col-md-1 col-sm-1">
+                    <?php echo $_SESSION['counter_cabina']; ?>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
                     <form id="rimuovi-cabina" action="#" method="post">
-                            <input class="btn-prenotazione" type='submit' name="rimuoviCabina" value="-" >
-                        </form>
-                    </div>
-                    <div id="counter-cabina" class="col-lg-1">
-                        <?php echo $_SESSION['counter_cabina']; ?>
-                    </div>
-                    <div id="saldo-cabina" class="col-lg-1">
-                        <?php echo $_SESSION['saldo_cabina']." €"; ?>
-                    </div>
+                        <button class="btn-prenotazione" type='submit' name="rimuoviCabina">-</button>
+                    </form>
                 </div>
-                
-                <div class="row row-prenotazione justify-content-center">
-                    <div class="col-lg-8">- Conto: </div>
-                        <div id="conto" class="col-lg-1">
-                            <?php echo $_SESSION['conto']." €"; ?>
-                        </div>
+                <div id="saldo-cabina" class="col-lg-2 col-md-2 col-sm-2">
+                    <?php echo $_SESSION['saldo_cabina']." €"; ?>
                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10">Conto: </div>
+                <div id="conto" class="col-lg-2 col-md-2 col-sm-2">
+                    <?php echo $_SESSION['conto']." €"; ?>
+                </div>
+            </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 offset-lg-8">
-                        <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>, riga=<?php echo $_SESSION['riga']; ?>, colonna='<?php echo $_SESSION['colonna']; ?>')">Procedi al modulo di pagamento</button>
-                    </div>
+            <div class="row no-bg">
+                <div class="col-lg-4 offset-lg-8">
+                    <button type="button" class="btn btn-primary" onclick="bottonePagamento(conto=<?php echo $_SESSION['conto']; ?>, id=<?php echo $_SESSION['id']; ?>, riga=<?php echo $_SESSION['riga']; ?>, colonna='<?php echo $_SESSION['colonna']; ?>')">Procedi al modulo di pagamento</button>
                 </div>
             </div>
         </div>

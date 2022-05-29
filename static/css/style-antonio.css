@@ -307,84 +307,65 @@
 
 /*--------------------------------------------------------------------------- PRENOTAZIONE --------------------------------------------------------------------------------------*/
 
-/*  */
-#prenotazione{
-  background-color: white;
-  height: fit-content;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-}
 
-#prenotazione > .box-prenotazione {
+#prenotazione {
   max-width: 60%;
   border: solid 10px #57AEE7;
   border-radius: 10px;
   background-color: #57AEE7;
-  margin: 300px;
+  margin: 50px;
   margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-#prenotazione > .box-prenotazione > .container {
+#prenotazione > .container {
   margin: 0px;
   padding: 20px;
 }
 
-#prenotazione > .box-prenotazione > .container > .row-prenotazione {
-  background-color: white;
+#prenotazione > .container > .row {
+  font-family: 'Imprima', sans-serif;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
   margin: 20px;
-  border: 2px solid #57AEE7;
-  border-radius: 15px;
+  border-bottom: 2px solid #fff;
+  text-align: left;
+  vertical-align: middle;
 }
 
-.col-lg-5 {
-  text-align: left;
-}
-.col-lg-8 {
-  text-align: left;
-}
-.col-lg-10 {
-  text-align: left;
-  font-size: 15px;
-  color: #57AEE7;
-  margin-bottom: 10px;
-  text-decoration: underline;
+#prenotazione > .container > .row > .col-lg-2 {
+  text-align: right;
 }
 
+#prenotazione > .container > .row > .col-lg-1 {
+  text-align: right;
+}
 
-#prenotazione > .box-prenotazione > .container > .row > .col-lg-10 > h1 {
-  color: #57AEE7;
+#prenotazione > .cntainer > .row > [class*="col-"] {
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#prenotazione > .container > .row > .col-lg-12 > h1 {
+  color: #fff;
   font-family: 'Imprima', sans-serif;
 }
 
-.btn-lettini {
-  width: 30px;
-  height: 30px;
-  padding: 0%;
-  margin: 3px;
-  border: 0px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: #57AEE7;
-}
-.btn-lettini:hover {
-  color: #fff;
-  border: 3px solid #57AEE7;
-}
 
 .btn-prenotazione {
-  width: 10px;
-  height: 10px;
-  padding: 0%;
-  margin: 1px;
-  border: 0px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: #57AEE7;
-}
-.btn-prenotazione:hover {
-  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #57AEE7;
+  background-color: #fff;
   border: 1px solid #57AEE7;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .btn-pagamento {
@@ -392,7 +373,33 @@
   height: auto;
 }
 
+#prenotazione > .container > .no-bg {
+  border-bottom: none;
+}
 
+@media only screen and (max-width: 768px) {
+  #ombrelloni {
+    margin: 20px;
+  }
+  #prenotazione {
+    max-width: 100%;
+  }
+  #prenotazione > .container {
+    margin: 0px;
+    padding: 5px;
+  }
+  #prenotazione > .container > .row > .col-lg-12 > h1 {
+    font-size: 35px;
+  }
+
+  [class*="col-"] {
+    font-size: 15px;
+  }
+}
+
+
+
+/* --------------------------------------------------------- CARICAMENTO --------------------------------------------------------------------- */
 
 #caricamento {
   min-height: 100%;
@@ -402,7 +409,7 @@
   width: 100%;
   text-align: center;
   justify-content: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 #caricamento > h1{
@@ -420,7 +427,7 @@
   text-align:center;
   padding:20px;
   height:80px;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 #caricamento > #loader-container > .loader{
