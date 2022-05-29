@@ -13,10 +13,21 @@
 - Postgresql
 - Ajax
 
-#### FONT
+#### ICONE
 
 - Fontawesome
+
+#### FONT
+
 - Google Font
+
+#### ANIMAZIONI
+
+- AOS
+
+#### SLIDER
+
+- Flickity
 
 #### COOKIE
 
