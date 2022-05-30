@@ -46,25 +46,6 @@
     <div id="ombrelloni">
 
         <h1>PRENOTA IL TUO OMBRELLONE</h1>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col right">
-                    <h3>Ombrellone libero: </h3>
-                </div>
-                <div class="col left">
-                    <button type="button" class="btn btn-umbrella"></button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col right">
-                    <h3>Ombrellone occupato: </h3>
-                </div>
-                <div class="col left">
-                    <button type="button" class="btn btn-umbrella" disabled></button>
-                </div>
-            </div>
-        </div>
 
         <!-- Inserire commenti -->
         <div class="flexbox-container">
