@@ -911,6 +911,7 @@ body {
 
 .navbar-nav .nav-link {
     font-family: 'Voltaire', sans-serif;
+    font-size: 20px;
 }
 
 .navbar .navbar-brand {
@@ -954,7 +955,7 @@ body {
 
 footer {
     padding-top: 25px;
-    height: 300px;
+    height: 370px;
 }
 
 .servizi, .galleria, .contatti {
