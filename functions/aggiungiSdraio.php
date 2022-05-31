@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili all'aggiunta di una sdraio
     session_start();
     $_SESSION['counter_sdraio']++;
     $_SESSION['saldo_sdraio'] += 5;

@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili alla rimozione di una cabina
     session_start();
     if ($_SESSION['counter_cabina'] > 0) {
         $_SESSION['counter_cabina']--;

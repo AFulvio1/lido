@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili all'aggiunta di una cabina
     session_start();
     $_SESSION['counter_cabina']++;
     $_SESSION['saldo_cabina'] += 5;

@@ -1,7 +1,9 @@
+// bottone che rimanda alla pagina "caricamento"
 function bottonePagamento(conto, id, riga, colonna) {
     window.open("http://localhost:3000/servizi/ombrelloni/caricamento.php?conto=" + encodeURIComponent(conto) + "&id=" + encodeURIComponent(id) + "&riga=" + encodeURIComponent(riga) + "&colonna=" + encodeURIComponent(colonna));
 }
     
+// chiamate ajax che aggiornano i dati del riepilogo della prenotazione 
 $(document).ready( function() {
     $('#aggiungi-lettino').on('submit', function (e) {
         e.preventDefault();
@@ -20,9 +22,7 @@ $(document).ready( function() {
             }
         });
     });
-});
 
-$(document).ready( function() {
     $('#rimuovi-lettino').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
@@ -40,9 +40,7 @@ $(document).ready( function() {
             }
         });
     });
-});
 
-$(document).ready( function() {
     $('#aggiungi-sdraio').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
@@ -60,9 +58,7 @@ $(document).ready( function() {
             }
         });
     });
-});
 
-$(document).ready( function() {
     $('#rimuovi-sdraio').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
@@ -80,9 +76,7 @@ $(document).ready( function() {
             }
         });
     });
-});
 
-$(document).ready( function() {
     $('#aggiungi-cabina').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
@@ -100,9 +94,7 @@ $(document).ready( function() {
             }
         });
     });
-});
 
-$(document).ready( function() {
     $('#rimuovi-cabina').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
@@ -120,5 +112,4 @@ $(document).ready( function() {
             }
         });
     });
-});
-    
+});    

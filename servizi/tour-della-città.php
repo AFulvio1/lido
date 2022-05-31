@@ -1,4 +1,5 @@
 <?php
+  // Cancellazione delle variabili di sessione
   if (isset($_SESSION['previous'])) {
     if (basename($_SERVER['PHP_SELF']) != $_SESSION['previous']) {
       session_destroy();
@@ -163,7 +164,7 @@
   </div>
 
     
-  <!-- FOOTER DA FARE -->
+  <!-- FOOTER -->
   <span id="footer-container"></span>
   <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 

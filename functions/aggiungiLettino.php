@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili all'aggiunta di un lettino
     session_start();
     $_SESSION['counter_lettini']++;
     $_SESSION['saldo_lettini'] += 5;

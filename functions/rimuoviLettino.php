@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili alla rimozione di un lettino
     session_start();
     if ($_SESSION['counter_lettini'] > 0) {
         $_SESSION['counter_lettini']--;

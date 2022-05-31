@@ -152,7 +152,7 @@
     </div>
 
 
-    <!-- FOOTER DA FARE -->
+    <!-- FOOTER -->
     <span id="footer-container"></span>
     <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 

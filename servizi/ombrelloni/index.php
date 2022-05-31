@@ -1,10 +1,12 @@
 <?php
+    // Cancellazione delle variabili di sessione
     if (isset($_SESSION['previous'])) {
         if (basename($_SERVER['PHP_SELF']) != $_SESSION['previous']) {
             session_destroy();
         }
     }
 
+    // connessione e query di select nel DB
     include('../../functions/connection.php');
     $DB = new DB("localhost","postgres","postgres","lido","5432");
     $table = $DB->getTable("umbrellas");
@@ -47,15 +49,14 @@
 
         <h1>PRENOTA IL TUO OMBRELLONE</h1>
 
-        <!-- Inserire commenti -->
         <div class="flexbox-container">
             <?php
+                // set delle variabili da usare per la costruzione della griglia
                 $n_riga = 1;
                 $n_colonna;
                 $n_umbrella = 400;
                 $costo_fila = 15;
                 $numero_fila = 20;
-                //echo "<hr>";
                 foreach($table as $i => $row) {
                     echo "<div class=\"row\">";
                     foreach($row as $j => $column) {
@@ -92,7 +93,7 @@
 
 
 
-    <!-- FOOTER DA FARE -->
+    <!-- FOOTER -->
     <span id="footer-container"></span>
     <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 

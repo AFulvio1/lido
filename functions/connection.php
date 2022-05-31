@@ -1,5 +1,5 @@
 <?php
-
+    // Classe che racchiude i dati di connessione al database
     class dbObj {
 
         var $servername, $username, $password, $dbname, $port, $conn;
@@ -12,6 +12,7 @@
             $this->port = $port;
         }
 
+        // funzione che tenta la connessione, se l'esito è positivo salva la stringa di connessione e la ritorna
         function getConnString() {
             $con = pg_connect("host=".$this->servername." dbname=".$this->dbname." password=".$this->password." user=".$this->username." port=".$this->port."") 
                 or die("Connection failed: ".pg_last_error());
@@ -63,6 +64,7 @@
             return $data;
         }
 
+        // funzione che prende in input le coordinate del valore da settare nella tabella ed esegue la query di update
         public function setValue(string $table, string $riga, string $colonna) {
             $riga_converted = intval($riga);
             $query = "UPDATE public.$table

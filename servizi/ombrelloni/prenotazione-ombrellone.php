@@ -1,12 +1,15 @@
 <?php
     session_start();
 
+    // recupero dei valori passati tramite l'url
     include('../../functions/geturls.php');
     $url_components = parse_url($url);
     parse_str($url_components['query'], $params);
 
+    // set per il controllo delle variabili di sessione
     $_SESSION['previous'] = basename($_SERVER['PHP_SELF']);
 
+    // set delle variabili di sessione
     $_SESSION['id'] = $params['numero'];
     $_SESSION['conto'] = $params['costo'];
     $_SESSION['riga'] = $params['riga'];
@@ -56,81 +59,81 @@
         <div class="container box-prenotazione">
 
             <div class="row no-bg">
-                <div class="col col-lg-12 col-md-12 col-sm-12"><h1>RIEPILOGO PRENOTAZIONE</h1></div>
+                <div class="col-lg-12"><h1>RIEPILOGO PRENOTAZIONE</h1></div>
             </div>
 
             <div class="row no-bg">
-                <div class="alert col col-lg-12 col-md-12 col-sm-12">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
+                <div class="alert col-lg-12">Prima di completare la prenotazione, scegli gli altri servizi da aggiungere</div>
             </div>
 
             <div class="row">
-                <div class="col col-lg-10 col-md-10 col-sm-12">Ombrellone selezionato: <?php echo $params['numero']?></div>
-                <div class="col col-lg-2 col-md-2 col-sm-12"><?php echo $params['costo']?> €</div>
+                <div class="col-lg-10">Ombrellone selezionato: <?php echo $params['numero']?></div>
+                <div class="col-lg-2"><?php echo $params['costo']?> €</div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-12">Seleziona i lettini: </div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-7">Seleziona i lettini: </div>
+                <div class="col-lg-1">
                     <form id="aggiungi-lettino" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiLettino">+</button>
                     </form>
                 </div>
-                <div id="counter-lettini" class="col-lg-1 col-md-1 col-sm-3">
+                <div id="counter-lettini" class="col-lg-1">
                     <?php echo $_SESSION['counter_lettini']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-1">
                     <form id="rimuovi-lettino" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviLettino">-</button>
                     </form>
                 </div>
-                <div id="saldo-lettini" class="col-lg-2 col-md-2 col-sm-3">
+                <div id="saldo-lettini" class="col-lg-2">
                     <?php echo $_SESSION['saldo_lettini']." €"; ?>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-12">Seleziona le sdraio: </div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-7">Seleziona le sdraio: </div>
+                <div class="col-lg-1">
                     <form id="aggiungi-sdraio" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiSdraio">+</button>
                     </form>
                 </div>
-                <div id="counter-sdraio" class="col-lg-1 col-md-1 col-sm-3">
+                <div id="counter-sdraio" class="col-lg-1">
                     <?php echo $_SESSION['counter_sdraio']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-1">
                     <form id="rimuovi-sdraio" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviSdraio">-</button>
                     </form>
                 </div>
-                <div id="saldo-sdraio" class="col-lg-2 col-md-2 col-sm-3">
+                <div id="saldo-sdraio" class="col-lg-2">
                     <?php echo $_SESSION['saldo_sdraio']." €"; ?>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-12">Vuoi inserire anche una cabina?</div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-7">Vuoi inserire anche una cabina?</div>
+                <div class="col-lg-1">
                     <form id="aggiungi-cabina" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="aggiungiCabina">+</button>
                     </form>
                 </div>
-                <div id="counter-cabina" class="col-lg-1 col-md-1 col-sm-3">
+                <div id="counter-cabina" class="col-lg-1">
                     <?php echo $_SESSION['counter_cabina']; ?>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-3">
+                <div class="col-lg-1">
                     <form id="rimuovi-cabina" action="#" method="post">
                         <button class="btn-prenotazione" type='submit' name="rimuoviCabina">-</button>
                     </form>
                 </div>
-                <div id="saldo-cabina" class="col-lg-2 col-md-2 col-sm-3">
+                <div id="saldo-cabina" class="col-lg-2">
                     <?php echo $_SESSION['saldo_cabina']." €"; ?>
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-lg-10 col-md-10 col-sm-10">Conto: </div>
-                <div id="conto" class="col-lg-2 col-md-2 col-sm-2">
+                <div class="col-lg-10">Conto: </div>
+                <div id="conto" class="col-lg-2">
                     <?php echo $_SESSION['conto']." €"; ?>
                 </div>
             </div>
@@ -144,7 +147,7 @@
     </div>
 
 
-    <!-- FOOTER DA FARE -->
+    <!-- FOOTER -->
     <span id="footer-container"></span>
     <span class="load-html" data-container="footer-container" data-source="/partials/footer.html"></span>
 

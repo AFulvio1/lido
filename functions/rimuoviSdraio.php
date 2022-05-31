@@ -1,4 +1,5 @@
 <?php
+    // parte che aggiorna tutte le variabili alla rimozione di una sdraio
     session_start();
     if ($_SESSION['counter_sdraio'] > 0) {
         $_SESSION['counter_sdraio']--;

@@ -1,12 +1,16 @@
 <?php
+    // recupero dei valori passati nell'url
     include("../../functions/geturls.php");
     $url_components = parse_url($url);
     parse_str($url_components['query'], $params);
+
+    // set devi valori dell'url in variabili locali
     $id = $params['id'];
     $riga = $params['riga'];
     $colonna = $params['colonna'];
     $conto = $params['conto'];
 
+    // connessione e query di update nel DB
     include('../../functions/connection.php');
     $db = new DB("localhost","postgres","postgres","lido","5432");
     $db->setValue("umbrellas", $riga, $colonna);
@@ -35,6 +39,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body style="background-color: #57AEE7;">
+
     <div id="caricamento">
         <div id="loader-container">
             <div id="loader-one" class="loader"></div>
