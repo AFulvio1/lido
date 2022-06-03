@@ -10,14 +10,23 @@ Lo scopo di questo sito web e di promuovere lo stabilimento e i suoi servizi. Ne
 
 Le pagine presenti sono:
 
-- ombrelloni
+- Ombrelloni:
   - E' il "core" del nostro progetto. Permette di prenotare l'ombrellone nella posizione in cui più si desidera, e successivamente, aggiugere i servizi accessori (lettini, sdraio e cabine);
 
-- ristorante
-- campi da beach-volley
-- eventi privati
-- mini club
-- tour della città
+- Rristorante
+  - Menù e foto del ristorante;
+
+- Campi da beach-volley
+  - Descrizione dei campi e foto;
+
+- Eventi privati
+  - Descrizione dei vari servizi offerti e foto;
+
+- Mini club
+  - Descrizione dei giochi e foto;
+
+- Tour della città
+  - lista dei posti da visitare con relative foto;
 
 #### TECNOLOGIE UTILIZZATE
 
