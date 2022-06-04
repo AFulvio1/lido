@@ -37,7 +37,7 @@ Le pagine presenti sono:
 - Postgresql
 - Ajax
 
-##### LIBRERIE E FRAMEWORK
+#### LIBRERIE E FRAMEWORK
 
 - Bootstrap
 - JQuery
