@@ -28,6 +28,16 @@ Le pagine presenti sono:
 - Tour della città
   - lista dei posti da visitare con relative foto;
 
+### PARTIAL
+
+La cartella partial contiene tutte le varie sezioni del sito. L'idea è dividere il codice e renderlo modulare per poter lavorarci meglio e non creare file con molte righe. Il codice javascript inserito in ogni pagina carica ad ogni container inserito in ciascuna pagina il proprio "partial".
+
+### FUNCTIONS
+
+In questa cartella ci sono classi e funzioni php relative alla pagina ombrelloni. In "connection" viene gestita la connessione con il DB e le query. In "geturls" c'è la gestione delle variabili passate tramite gli URL, mentre tutti i restanti file servono per aggiornare i dati nella sezione "prenotazione".
+
+---
+
 #### TECNOLOGIE UTILIZZATE
 
 - HTML
